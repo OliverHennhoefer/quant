@@ -1,4 +1,4 @@
-# Webscraper for Stock Fundamentals and other Business Indicators
+# Scraping Company Data and other Business Indicators
 
 This project is under development and currently offers very limited functionality 🔌
 
