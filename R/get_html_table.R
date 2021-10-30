@@ -13,14 +13,15 @@
 #' stock_list <- get_stock_list()
 #'
 get_html_table <- function(url, xpath = NULL, name = NULL, raw = FALSE) {
-  
+
   table <- rvest::read_html(url) %>%
     rvest::html_nodes(xpath = xpath) %>%
     rvest::html_table() %>%
     data.table::as.data.table()
-  
+
+  if (ncol(table) == 0) return(data.frame("remove" = TRUE))
   if (raw) return(table)
-  
+
   table <- table[2:3, ] #remove header row
   colnames(table) <- paste0(name,
                             substr(table[1, ],
@@ -29,6 +30,6 @@ get_html_table <- function(url, xpath = NULL, name = NULL, raw = FALSE) {
                             )
   table[table == "-" | table == ""] <- NA
   table <- table[-1, as.logical(!colSums(is.na(table)) > 0), with = FALSE]
-  
+
   return(table)
 }

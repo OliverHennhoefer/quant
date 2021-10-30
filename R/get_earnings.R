@@ -35,22 +35,12 @@ get_earnings <- function(df) {
     pe_table <- cbind(ticker, table, dfc)
     colnames(pe_table)[1] <- "Symbol"
 
-    #removes data older than n+/-5 years from oldest date and corrupted tables
-    lim_year <- getFirstYear(table)
-    if( lim_year < year(Sys.time()) - 5 |
-        lim_year > data.table::year(Sys.time()) + 1 |
-        ncol(table) < 2) {
-      pe_table <- data.frame("Symbol" = ticker, "EPS_TTM" = NA)
-    }
-
-    yr <- gsub("\\D", "\\1", ttmpe)
-    if( as.numeric(substr(yr, nchar(yr)-3, nchar(yr))) < year(Sys.time())-3) {
-      pe_table <- data.frame("Symbol" = ticker, "EPS_TTM" = NA)
-    }
+    if (check_table_topicality(table, ttmpe))
+    { pe_table <- data.frame("Symbol" = ticker, "EPS_TTM" = NA) }
 
     dfe <- plyr::rbind.fill(dfe, pe_table)
   }
 
-  df <- combine_data(res = dfe, data = df, kpi = "EPS")
+  df <- merge_with_input(new_data = dfe, input = df, kpi = "EPS")
   return(df)
 }

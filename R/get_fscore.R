@@ -10,9 +10,6 @@
 #' stock_piotroski <- get_fscore(stocks)
 #'
 get_fscore <- function(df) {
-  require(rvest)
-  require(plyr)
-  require(data.table)
   check_sanity(df)
 
   dfe <- data.frame()
@@ -29,7 +26,7 @@ get_fscore <- function(df) {
     table <- get_html_table(url, xpath = xpath, name = "FScore_20")
 
     xpath = '//*[@id="def_body_detail_height"]/font[1]'
-    ttmpe <- get_hmtl_text(url, xpath)
+    ttmpe <- get_html_text(url, xpath)
 
     ttm_year <- gsub("\\D", "\\1", ttmpe)[[1]]
     cval <- gsub("\\s*\\([^\\)]+\\)", "\\1", ttmpe) #remove paranthesis
@@ -38,16 +35,14 @@ get_fscore <- function(df) {
     dfc <- data.frame(cval)
     colnames(dfc) <- "FScore_TTM"
     pe_table <- cbind(ticker, table, dfc)
+    colnames(pe_table)[1] <- "Symbol"
 
-    lim_year <- getFirstYear(table)
-    if( lim_year < year(Sys.time())-5 |
-        lim_year > data.table::year(Sys.time()) + 1 |
-        ncol(table) < 2
-    ) pe_table <- data.frame(ticker, "FScore_TTM" = NA)
+    if (check_table_topicality(table, ttmpe))
+    { pe_table <- data.frame("Symbol" = ticker, "FScore_TTM" = NA) }
 
     dfe <- plyr::rbind.fill(dfe, pe_table)
   }
 
-  df <- combine_data(res = dfe, data = df, kpi = "FScore")
+  df <- merge_with_input(new_data = dfe, input = df, kpi = "FScore")
   return(df)
 }

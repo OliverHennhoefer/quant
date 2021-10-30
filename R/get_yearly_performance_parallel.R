@@ -1,7 +1,6 @@
 get_yearly_performance_parallel <- function(df) {
   check_sanity(df)
 
-
   # cnames <- colnames(df)
   # start_year <- min(as.numeric(gsub(".*?([0-9]+).*", "\\1", cnames)), na.rm = T)
   # if(identical(start_year, Inf)) start_year <- "2000"
@@ -17,23 +16,23 @@ get_yearly_performance_parallel <- function(df) {
   # year2 <- sapply(years, function(x) paste0(x, "-12-31"))
   # y_seq <- as.Date(c(rbind(year1, year2), format = "%Y-%m-%d"))
 
-  cl <- parallel::makeCluster(detectCores()-4)
+  cl <- parallel::makeCluster(parallel::detectCores()-4)
   doParallel::registerDoParallel(cl)
-  clusterCall(cl, function() library(plyr))
+  #clusterCall(cl, function() library(plyr))
 
   res <- foreach::foreach(i = seq_along(df$Symbol),
-                          .packages = c("quantmod", "plyr"),
+                          #.packages = c("quantmod", "plyr"),
                           .combine = rbind.fill,
                           .errorhandling = "pass") %dopar% {
-                            library(dplyr)
-
                             ticker <- df$Symbol[i]
                             out <- tryCatch(quantmod::getSymbols(ticker,
                                                         from = as.Date("2019-01-01"),
                                                         to = as.Date(Sys.Date()-3),
                                                         auto.assign = FALSE),
                                             error=function(e) e)
-                            if(inherits(out, "error")) return(as.data.frame(cbind(Symbol = NA)))
+                            if(inherits(out, "error")) {
+                              return(as.data.frame(cbind(Symbol = NA)))
+                            }
 
                             out1 <- quantmod::yearlyReturn(out)
                             out2 <- as.data.frame(cbind(Symbol = ticker, t(out1)))
@@ -41,21 +40,13 @@ get_yearly_performance_parallel <- function(df) {
                           }
 
   rownames(res) <- NULL
-  colnames(res)[2:ncol(res)] <- sapply(colnames(res)[2:ncol(res)], function(x) paste0("Return_", substr(x, 1, 4)))
+  #colnames(res)[2:ncol(res)] <- sapply(colnames(res)[2:ncol(res)], function(x) paste0("Return_", substr(x, 1, 4)))
   res <- merge(x = df, y = res)
   return(res)
 }
 
-library(quantmod)
-library(foreach)
-library(parallel)
-library(doParallel)
-library(dplyr)
-library(plyr)
-setwd("C:/Users/olive/OneDrive/Dokumente/R_Projects/shiny_stock_screener")
-dtf <- read.csv2(file = "./dat/main_secs.csv")
-tictoc::tic()
-dtf %>% get_yearly_performance_parallel() -> test
-tictoc::toc()
-
-
+# dtf <- read.csv2(file = "./dat/main_secs.csv")
+# dtf <- read.csv2(file = "./dat/main_secs_price_country_volume_eps_fscore.csv")
+# dtf[1:10, ] %>% get_yearly_performance_parallel() -> test
+# dtf[1:10, ] %>% get_earnings() -> test
+# dtf %>% get_interest_coverage() -> test
