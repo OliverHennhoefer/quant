@@ -19,10 +19,13 @@ df %>%
   get_sector %>%
   get_interest_coverage
   
->   Symbol Sector             Subsector         Interest_Coverage_2016  Interest_Coverage_2017  Interest_Coverage_2018  Interest_Coverage_2019  Interest_Coverage_2020  Interest_Coverage_2021   
+>   Symbol Sector             Subsector         Interest_Coverage_2016  Interest_Coverage_2017  Interest_Coverage_2018  Interest_Coverage_2019  Interest_Coverage_2020  Interest_Coverage_2021  Interest_Coverage_TTM  
+NA                      36.28
+20.04                   24.35
+29.80                   37.55
   1 AAPL   Technology         Hardware          41.23                   26.41                   21.88                   17.88                   23.07
-  2 BABA   Consumer Cyclical  Retail - Cyclical 2.46   
-  3 MSFT   Technology         Software          3.25               
+  2 BABA   Consumer Cyclical  Retail - Cyclical NA                      18.16                   19.73                   11.00                   17.76                    
+  3 MSFT   Technology         Software          NA                      13.20                   12.83                   15.99                   20.44               
 ```
 
 This webscraping toolset provides functionalities for easily gathering stock data for the last five fiscal years.
