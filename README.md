@@ -8,7 +8,7 @@ The project heavily depends on data provided by [gurufocus.com](https://www.guru
 df <- data.frame("Symbol" = c("AAPL", "MSFT", "BABA"))
 
 df %>%
-  getEarnings()
+  get_earnings()
 
 >   Symbol EPS_2016 EPS_2017 EPS_2018  EPS_2019  EPS_2020  EPS_2021  EPS_TTM
   1 AAPL   2.08     2.30    2.98       2.97      3.28      NA        5.11
