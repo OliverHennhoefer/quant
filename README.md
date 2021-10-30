@@ -19,13 +19,13 @@ df %>%
 This webscraping toolset provides functionalities for easily gathering stock data for the last five fiscal years.
 This projects gives access to complete financial data of at least 5000-7000 stocks, depending on the indicator and the corresponding listing itself.
 
-📚 Extensive data for at 6000+ unique listings.
-:date: Data from the last five company's fiscal years.
-:recycle: Convenient merging-abilities to update past scraping results.
+📚 Extensive data for at 6000+ unique listings. <br>
+:date: Data from the last five company's fiscal years. <br>
+:recycle: Convenient merging-abilities to update past scraping results. <br>
 
 _________________________________________________________
 Current state and capabilities of the presented project:
-- [x] Complete Stock List (~30.000 unique listings)
+- [x] Complete Stock List
 - [x] Trading Volume (Month)
 - [x] Sector and Subsector
 - [x] Earnings per Share (Diluted)
