@@ -20,8 +20,8 @@ This webscraping toolset provides functionalities for easily gathering stock dat
 This projects gives access to complete financial data of at least 5000-7000 stocks, depending on the indicator and the corresponding listing itself.
 
 📚 Extensive data for at 6000+ unique listings. <br>
-:date: Data from the last five company's fiscal years. <br>
-:recycle: Convenient merging-abilities to update past scraping results. <br>
+📅 Records from the last five company's fiscal years. <br>
+♻️ Convenient merging-abilities to update past scraping results. <br>
 
 _________________________________________________________
 Current state and capabilities of the presented project:
