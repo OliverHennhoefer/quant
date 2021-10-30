@@ -19,10 +19,10 @@ df %>%
   get_sector %>%
   get_interest_coverage
   
->   Symbol Sector             Subsector         Interest_Coverage_2016  Interest_Coverage_2017  ... Interest_Coverage_2021  Interest_Coverage_TTM  
-  1 AAPL   Technology         Hardware          41.23                   26.41                       NA                      36.28
-  2 BABA   Consumer Cyclical  Retail - Cyclical NA                      18.16                       20.04                   24.35                                    
-  3 MSFT   Technology         Software          NA                      13.20                       29.80                   37.55                              
+>   Symbol Sector             Subsector         Interest_Coverage_2016  Interest_Coverage_2017 ... Interest_Coverage_2021  Interest_Coverage_TTM  
+  1 AAPL   Technology         Hardware          41.23                   26.41                  ... NA                      36.28
+  2 BABA   Consumer Cyclical  Retail - Cyclical NA                      18.16                  ... 20.04                   24.35                                    
+  3 MSFT   Technology         Software          NA                      13.20                  ... 29.80                   37.55                              
 ```
 
 This webscraping toolset provides functionalities for easily gathering stock data for the last five fiscal years.
