@@ -50,3 +50,4 @@ get_yearly_performance_parallel <- function(df) {
 # dtf[1:10, ] %>% get_yearly_performance_parallel() -> test
 # dtf[1:10, ] %>% get_earnings() -> test
 # dtf %>% get_interest_coverage() -> test
+# dtf <- read.csv2(file = "./dat/main_secs_price_country_volume_eps_fscore_interest_coverage.csv")
