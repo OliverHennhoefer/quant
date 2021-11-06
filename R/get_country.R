@@ -10,7 +10,7 @@ get_country <- function(df) {
   check_sanity(df)
 
   df$Country <- NA
-  rows <- nrow
+  rows <- nrow(df)
   pbar <- utils::txtProgressBar(0, rows, style = 3)
 
   for(i in 1:rows) {

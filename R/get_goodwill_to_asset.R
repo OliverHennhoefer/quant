@@ -9,7 +9,7 @@
 #' @example
 #' stock_piotroski <- get_fscore(stocks)
 #'
-get_interest_coverage <- function(df) {
+get_goodwill_to_asset <- function(df) {
   check_sanity(df)
 
   dfe <- data.frame()
@@ -20,11 +20,11 @@ get_interest_coverage <- function(df) {
     utils::setTxtProgressBar(pbar, i)
 
     ticker <- df$Symbol[i]
-    url <- paste0("https://www.gurufocus.com/term/interest_coverage/",
+    url <- paste0("https://www.gurufocus.com/term/goodwill2asset/",
                   ticker, "/")
 
     xpath = '//*[@id="target_def_historical_data"]/div[2]/div/table'
-    table <- get_html_table(url, xpath = xpath, name = "Interest_Coverage_20")
+    table <- get_html_table(url, xpath = xpath, name = "Goodwill2Asset_20")
 
     xpath = '//*[@id="def_body_detail_height"]/font[1]'
     ttmpe <- get_html_text(url, xpath)
@@ -34,16 +34,16 @@ get_interest_coverage <- function(df) {
     cval <- as.numeric(gsub("[^0-9.-]+", "\\1", cval)) #earnings w\o currency
 
     dfc <- data.frame(cval)
-    colnames(dfc) <- "Interest_Coverage_TTM"
+    colnames(dfc) <- "Goodwill2Asset_TTM"
     ic_table <- cbind(ticker, table, dfc)
     colnames(ic_table)[1] <- "Symbol"
 
     if (check_table_topicality(table, ttmpe))
-    { ic_table <- data.frame("Symbol" = ticker, "Interest_Coverage_TTM" = NA) }
+    { ic_table <- data.frame("Symbol" = ticker, "Goodwill2Asset_TTM" = NA) }
 
     dfe <- plyr::rbind.fill(dfe, ic_table)
   }
 
-  df <- merge_with_input(new_data = dfe, input = df, kpi = "Interest_Coverage")
+  df <- merge_with_input(new_data = dfe, input = df, kpi = "Goodwill2Asset")
   return(df)
 }

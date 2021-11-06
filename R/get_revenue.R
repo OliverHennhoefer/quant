@@ -9,7 +9,7 @@
 #' @example
 #' stock_piotroski <- get_fscore(stocks)
 #'
-get_interest_coverage <- function(df) {
+get_revenue <- function(df) {
   check_sanity(df)
 
   dfe <- data.frame()
@@ -20,30 +20,39 @@ get_interest_coverage <- function(df) {
     utils::setTxtProgressBar(pbar, i)
 
     ticker <- df$Symbol[i]
-    url <- paste0("https://www.gurufocus.com/term/interest_coverage/",
-                  ticker, "/")
+    url <- paste0("https://www.gurufocus.com/term/Revenue/", ticker, "/")
 
     xpath = '//*[@id="target_def_historical_data"]/div[2]/div/table'
-    table <- get_html_table(url, xpath = xpath, name = "Interest_Coverage_20")
+    table <- get_html_table(url, xpath = xpath, name = "Market_Cap_20")
+
+    table <- sapply(table, function(x) gsub("\\..*", "", gsub(",", "", x)))
 
     xpath = '//*[@id="def_body_detail_height"]/font[1]'
     ttmpe <- get_html_text(url, xpath)
 
-    ttm_year <- gsub("\\D", "\\1", ttmpe)[[1]]
+    #ttm_year <- gsub("\\D", "\\1", ttmpe)[[1]]
     cval <- gsub("\\s*\\([^\\)]+\\)", "\\1", ttmpe) #remove paranthesis
-    cval <- as.numeric(gsub("[^0-9.-]+", "\\1", cval)) #earnings w\o currency
+    cval <- as.numeric(gsub("[^0-9.-]+", "\\1", cval))
+
+    if(grepl("Mil", ttmpe)) cval <- cval * 1000000
+    if(grepl("Mil", ttmpe)) table <- sapply(table,
+                                            function(x) as.numeric(x) * 1000000)
+
+    table <- data.frame(t(data.frame(table)))
+    rownames(table) <- NULL
 
     dfc <- data.frame(cval)
-    colnames(dfc) <- "Interest_Coverage_TTM"
+    colnames(dfc) <- "Revenue_TTM"
     ic_table <- cbind(ticker, table, dfc)
     colnames(ic_table)[1] <- "Symbol"
 
     if (check_table_topicality(table, ttmpe))
-    { ic_table <- data.frame("Symbol" = ticker, "Interest_Coverage_TTM" = NA) }
+    { ic_table <- data.frame("Symbol" = ticker, "Revenue_TTM" = NA) }
 
     dfe <- plyr::rbind.fill(dfe, ic_table)
   }
 
-  df <- merge_with_input(new_data = dfe, input = df, kpi = "Interest_Coverage")
+  df <- merge_with_input(new_data = dfe, input = df, kpi = "Revenue")
   return(df)
 }
+
