@@ -34,9 +34,17 @@ This projects gives access to complete financial data of at least 5000-7000 stoc
 
 _________________________________________________________
 Current state and capabilities of the presented project:
-- [x] Complete Stock List
-- [x] Trading Volume (Month)
-- [x] Sector and Subsector
+- [x] Complete Stock List (gurufocus.com)
+- [x] Index Stock Lists (SP500, NASDAQ100)
+- [x] Trading Volume (Monthly)
+- [x] Country/Sector/Subsector/MCap
 - [x] Earnings per Share (Diluted)
+- [x] Revenue
+- [x] Price-to-Free-Cashflow
+- [x] ROIC & WACC
+- [X] Price-Earnings-Ratio
 - [x] Piotroski F-Score
 - [x] Interest Coverage
+- [X] Buyback-Ratio
+- [x] Payout-Ratio
+- [x] Goodwill to Asset
