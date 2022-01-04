@@ -5,7 +5,7 @@ check_table_topicality <- function(table, ttmpe) {
   year <- as.numeric(substr(tbl_year, nchar(tbl_year) - 4 + 1, nchar(tbl_year)))
   curr_year <- data.table::year(Sys.time())
 
-  if( year < (curr_year - 5) | year > (curr_year + 1) | ncol(table) < 2)
+  if( year < (curr_year - 6) | year > (curr_year + 1) | ncol(table) < 2)
     { return(TRUE) }
 
   # ttm_year <- gsub("\\D", "\\1", ttmpe)
