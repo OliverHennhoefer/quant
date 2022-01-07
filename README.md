@@ -48,3 +48,4 @@ Current state and capabilities of the presented project:
 - [X] Buyback-Ratio
 - [x] Payout-Ratio
 - [x] Goodwill to Asset
+- [x] Altman z-Score 
