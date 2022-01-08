@@ -49,7 +49,8 @@ Current state and capabilities of the project:
 - [x] Payout-Ratio
 - [x] Goodwill to Asset
 - [x] Altman z-Score 
-- [x] Book Value Per Share
+- [x] Book Value per Share
 - [x] Cash Per Share
-- [x] Dividends Per Share
-- [x] E10 
+- [x] Dividends per Share
+- [x] E10 (Shiller P/E-Ratio component)
+- [x] EBIT per Share
