@@ -31,6 +31,7 @@ This projects gives access to complete financial data of at least 5000-7000 stoc
 📚 Extensive data for 6.000+ unique listings. <br>
 📅 Records from the last five company's fiscal years. <br>
 ♻️ Convenient merging-abilities to update past scraping results. <br>
+:no_entry_sign: Automatically removes insufficient scraping results. <br>
 
 _________________________________________________________
 Current state and capabilities of the project:
