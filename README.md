@@ -54,3 +54,4 @@ Current state and capabilities of the project:
 - [x] Dividends per Share
 - [x] E10 (Shiller P/E-Ratio component)
 - [x] EBIT per Share
+- [x] EBITDA per Share
