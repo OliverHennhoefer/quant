@@ -51,3 +51,4 @@ Current state and capabilities of the presented project:
 - [x] Altman z-Score 
 - [x] Book Value Per Share
 - [x] Cash Per Share
+- [x] Dividends Per Share
