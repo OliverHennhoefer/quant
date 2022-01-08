@@ -56,3 +56,4 @@ Current state and capabilities of the project:
 - [x] EBIT per Share
 - [x] EBITDA per Share
 - [x] Enterprise Value
+- [x] EPS without Non-Recurring Items
