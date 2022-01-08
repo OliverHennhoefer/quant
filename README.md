@@ -58,3 +58,4 @@ Current state and capabilities of the project:
 - [x] Enterprise Value
 - [x] EPS without Non-Recurring Items
 - [x] Funds from Operations per Share (REITs)
+- [x] Financial Strength
