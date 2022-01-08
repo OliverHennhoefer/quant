@@ -62,3 +62,4 @@ Current state and capabilities of the project:
 - [x] Free Cashflow per Share
 - [x] Insider Ownership [%] 
 - [x] Institutional Ownership [%] 
+- [x] Net Current Asset Value
