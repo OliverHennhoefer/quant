@@ -52,3 +52,4 @@ Current state and capabilities of the project:
 - [x] Book Value Per Share
 - [x] Cash Per Share
 - [x] Dividends Per Share
+- [x] E10 
