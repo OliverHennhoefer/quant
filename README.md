@@ -63,3 +63,4 @@ Current state and capabilities of the project:
 - [x] Insider Ownership [%] 
 - [x] Institutional Ownership [%] 
 - [x] Net Current Asset Value
+- [x] Net-Net Working Capital
