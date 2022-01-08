@@ -16,7 +16,7 @@ get_country <- function(df) {
   for(i in 1:rows) {
     utils::setTxtProgressBar(pbar, i)
 
-    ticker <- df$Country[i]
+    ticker <- df$Symbol[i]
     url <- paste0("https://www.gurufocus.com/stock/", ticker, "/summary")
     xpath <- '//*[@id="stock-header"]/div/div[1]/div/div[1]/div/div/span[1]'
     country <- get_html_text(url, xpath = xpath)
