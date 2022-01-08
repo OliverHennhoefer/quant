@@ -49,3 +49,4 @@ Current state and capabilities of the presented project:
 - [x] Payout-Ratio
 - [x] Goodwill to Asset
 - [x] Altman z-Score 
+- [x] Book Value Per Share
