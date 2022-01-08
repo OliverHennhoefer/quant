@@ -33,7 +33,7 @@ This projects gives access to complete financial data of at least 5000-7000 stoc
 ♻️ Convenient merging-abilities to update past scraping results. <br>
 
 _________________________________________________________
-Current state and capabilities of the presented project:
+Current state and capabilities of the project:
 - [x] Complete Stock List (gurufocus.com)
 - [x] Index Stock Lists (SP500, NASDAQ100)
 - [x] Trading Volume (Monthly)
