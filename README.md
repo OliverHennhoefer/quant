@@ -59,3 +59,4 @@ Current state and capabilities of the project:
 - [x] EPS without Non-Recurring Items
 - [x] Funds from Operations per Share (REITs)
 - [x] Financial Strength
+- [x] Free Cashflow per Share
