@@ -64,3 +64,4 @@ Current state and capabilities of the project:
 - [x] Institutional Ownership [%] 
 - [x] Net Current Asset Value
 - [x] Net-Net Working Capital
+- [x] Owners Eearnings per Share (see 1986 Berkshire Hathaway Shareholder Letter)
