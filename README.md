@@ -50,3 +50,4 @@ Current state and capabilities of the presented project:
 - [x] Goodwill to Asset
 - [x] Altman z-Score 
 - [x] Book Value Per Share
+- [x] Cash Per Share
