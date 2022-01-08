@@ -60,3 +60,4 @@ Current state and capabilities of the project:
 - [x] Funds from Operations per Share (REITs)
 - [x] Financial Strength
 - [x] Free Cashflow per Share
+- [x] Insider Ownership [%] 
