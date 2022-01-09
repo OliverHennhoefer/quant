@@ -69,3 +69,4 @@ Current state and capabilities of the project:
 - [x] Predictability Rank & Profitability Rank (as calculated by gurufocus.com) 
 - [x] Probability of Financial Distress
 - [x] Scaled Operating Net Assets 
+- [x] Tangible Book per Share
