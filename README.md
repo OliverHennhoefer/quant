@@ -71,3 +71,4 @@ Current state and capabilities of the project:
 - [x] Probability of Financial Distress
 - [x] Scaled Operating Net Assets 
 - [x] Tangible Book Value per Share
+- [x] YoY Revenue/EPS/EBITDA per Share Growth
