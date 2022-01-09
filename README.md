@@ -66,5 +66,5 @@ Current state and capabilities of the project:
 - [x] Net Current Asset Value
 - [x] Net-Net Working Capital
 - [x] Owners Eearnings per Share (see 1986 Berkshire Hathaway Shareholder Letter)
-- [x] Predictability Rank (measure calculated by gurufocus.com) 
+- [x] Predictability Rank & Profitability Rank (as calculated by gurufocus.com) 
 - [x] Probability of Financial Distress
