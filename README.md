@@ -1,7 +1,7 @@
 # Scraping Company Data and other Business Indicators
 
-This project heavily relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) 📊
-Fill documentation has yet to be provided.
+This project heavily relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) 📊 <br>
+Full documentation has yet to be provided.
 
 ```r
 df <- data.frame("Symbol" = c("AAPL", "MSFT", "BABA"))
@@ -24,7 +24,7 @@ df %>%
   3 MSFT   Technology         Software          13.20                  ... 29.80                   37.55                              
 ```
 
-This webscraping toolset provides functionalities for easily gathering stock data for the last five fiscal years.
+This webscraping toolset provides functionalities for easily gathering stock data for the last five fiscal years. <br>
 This projects gives access to complete financial data of at least 5,000-7,000 stocks - depending on the indicator and the corresponding listing itself.
 
 📚 Extensive data for 6.000+ unique listings. <br>
