@@ -1,6 +1,7 @@
 # Scraping Company Data and other Business Indicators
 
 This project heavily relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) 📊
+Fill documentation has yet to be provided.
 
 ```r
 df <- data.frame("Symbol" = c("AAPL", "MSFT", "BABA"))
