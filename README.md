@@ -1,14 +1,12 @@
 # Scraping Company Data and other Business Indicators
 
-This project is under development and currently offers very limited functionality 🔌
-
 The project heavily depends on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) 📊
 
 ```r
 df <- data.frame("Symbol" = c("AAPL", "MSFT", "BABA"))
 
 df %>%
-  get_epsd()
+  get_epsd() #Diluted Earnings
 
 >   Symbol EPS_2017 EPS_2018  EPS_2019  EPS_2020  EPS_2021  EPS_TTM
   1 AAPL   2.30    2.98       2.97      3.28      5.61      5.62
