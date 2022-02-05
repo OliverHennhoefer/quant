@@ -8,7 +8,7 @@ data_nasdaq100 <- function(raw = FALSE) {
     rvest::html_table() %>%
     as.data.frame()
 
-  colnames(table) <- c("Company", "Symbol", "Sector", "Subsector")
+  colnames(table) <- c("company", "symbol", "sector", "subsector")
 
   if (raw) return(table)
   return(table[, 2, drop = FALSE])

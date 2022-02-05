@@ -10,7 +10,7 @@ data_sp500 <- function(raw = FALSE) {
 
   table <- table[, c(1, 2, 4, 5)]
 
-  colnames(table) <- c("Symbol", "Company", "Sector", "Subsector")
+  colnames(table) <- c("symbol", "company", "sector", "subsector")
 
   if (raw) return(table)
   return(table[, 1 , drop = FALSE])
