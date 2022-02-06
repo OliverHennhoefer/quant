@@ -12,13 +12,15 @@ data_nasdaq100 <- function() {
 
   url <- 'https://en.wikipedia.org/wiki/Nasdaq-100'
   xpath <- '//*[@id="constituents"]'
-  names <- c('company', 'symbol', 'sector', 'subsector')
+  names <- c('symbol', 'company', 'sector', 'subsector')
 
   # Fetch Data -----------------------------------------------------------------
   html_page <- rvest::read_html(url)
   html_node <- rvest::html_nodes(html_page, xpath = xpath)
   html_tbl <- rvest::html_table(html_node)
   html_dt <- data.table::as.data.table(html_tbl)
+
+  html_dt <- html_dt[, c(2, 1, 3, 4)]
 
   data.table::setnames(html_dt, names)
 

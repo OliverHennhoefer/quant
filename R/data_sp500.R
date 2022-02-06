@@ -8,7 +8,6 @@
 #' @example
 #' sp500 <- data_sp500()
 #'
-#' @export
 data_sp500 <- function() {
 
     url <- 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
