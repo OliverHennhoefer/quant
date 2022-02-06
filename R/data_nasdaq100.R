@@ -3,7 +3,7 @@
 #' Fetches the stock list provided by
 #' [wikipedia.org](https://de.wikipedia.org/wiki/NASDAQ-100)
 #'
-#' @return data.table(). Returns a data.frame containing stock ticker symbols.
+#' @return A `"data.table" "data.frame"` object.
 #'
 #' @example
 #' nasdaq100 <- data_nasdaq100()

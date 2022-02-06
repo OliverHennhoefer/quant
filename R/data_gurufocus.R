@@ -3,7 +3,7 @@
 #' Fetches the stock list provided by
 #' [gurufocus.com/stock_list](https://www.gurufocus.com/stock_list.php)
 #'
-#' @return data.frame(). Returns a data.frame containing stock ticker symbols.
+#' @return A `"data.table" "data.frame"` object.
 #'
 #' @example
 #' stock_list <- data_gurufocus()
@@ -34,7 +34,7 @@ data_gurufocus <- function() {
     html_tbl <- rvest::html_table(html_node)
     html_dt <- data.table::as.data.table(html_tbl)
 
-    html_dt[, c(3:ncol(html_dt)) := NULL] #retain ticker and company
+    html_dt[, c(3:ncol(html_dt)) := NULL]
     if(nrow(html_dt) == 0) break
 
     dat <- data.table::rbindlist(dat, html_dt)
