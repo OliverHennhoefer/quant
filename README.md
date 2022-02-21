@@ -4,7 +4,7 @@ This project heavily relies on data provided by [gurufocus.com](https://www.guru
 Full documentation has yet to be provided.
 
 ```r
-df <- data.frame("Symbol" = c("AAPL", "MSFT", "BABA"))
+df <- data.frame("symbol" = c("AAPL", "MSFT", "BABA"))
 
 df %>%
   get_epsd() #Diluted Earnings
