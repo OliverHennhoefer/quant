@@ -50,7 +50,7 @@ scrape_key_fig<- function(df, url, pfx, xpath_txt = NULL, xpath_tbl = NULL) {
     table <- cbind(ticker, table, df_num)
     colnames(table)[1] <- "symbol"
 
-    ## Check for outdated data -------------------------------------------------
+    ## Check for outdated dataF -------------------------------------------------
     if (quant::topicality(table)) {
       table <- data.frame("symbol" = ticker, "ttm" = NA)
       names(table)[2] <- paste0(pfx, "_ttm")
