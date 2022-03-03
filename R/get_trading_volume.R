@@ -1,3 +1,22 @@
+#' Get Trading Volume
+#'
+#' @description
+#' Function for fetching data from
+#' [gurufocus.com](https://www.gurufocus.com/stock/AAPL/summary).
+#'
+#' @usage get_trading_volume(df)
+#'
+#' @param df data.frame. Data frame with column 'symbol' containing at least one
+#' valid stock ticker symbol.
+#'
+#' @return
+#' The original data.frame supplemented by the company's average
+#' **Trading Volume** over the last two months.
+#'
+#' @examples
+#' df <- data.frame('symbol' = 'AAPL')
+#' res <- get_trading_volume(df)
+#'
 get_trading_volume <- function(df) {
   sanity(df)
 
