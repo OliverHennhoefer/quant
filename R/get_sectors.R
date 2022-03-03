@@ -1,3 +1,21 @@
+#' Get Sector and Subsector
+#'
+#' @description
+#' Function for fetching data from
+#' [gurufocus.com](https://www.gurufocus.com/stock/AAPL/summary).
+#'
+#' @usage get_sectors(df)
+#'
+#' @param df data.frame. Data frame with column 'symbol' containing at least one
+#' valid stock ticker symbol.
+#'
+#' @return
+#' The original data.frame supplemented by the company's sector and sub sector.
+#'
+#' @examples
+#' df <- data.frame('symbol' = 'AAPL')
+#' res <- get_sectors(df)
+#'
 get_sectors <- function(df) {
   sanity(df)
 
