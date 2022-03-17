@@ -2,8 +2,7 @@
 #'
 #' @description
 #' Wrapper function for fetching data from
-#' [gurufocus.com]\
-#' (https://www.gurufocus.com/term/earning_yield_greenblatt/AAPL/).
+#' [gurufocus.com](https://www.gurufocus.com/term/earning_yield_greenblatt/AAPL/).
 #'
 #' @usage get_greenblatt_earnings_yield(df)
 #'

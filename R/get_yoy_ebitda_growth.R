@@ -2,8 +2,7 @@
 #'
 #' @description
 #' Wrapper function for fetching data from
-#' [gurufocus.com]\
-#' (https://www.gurufocus.com/term/growth_per_share_ebitda/AAPL/).
+#' [gurufocus.com](https://www.gurufocus.com/term/growth_per_share_ebitda/AAPL/).
 #'
 #' @usage get_yoy_ebitda_growth(df)
 #'

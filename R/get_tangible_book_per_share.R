@@ -2,8 +2,7 @@
 #'
 #' @description
 #' Wrapper function for fetching data from
-#' [gurufocus.com]\
-#' (https://www.gurufocus.com/term/Tangibles_book_per_share/AAPL/).
+#' [gurufocus.com](https://www.gurufocus.com/term/Tangibles_book_per_share/AAPL/).
 #'
 #' @usage get_tangible_book_per_share(df)
 #'
