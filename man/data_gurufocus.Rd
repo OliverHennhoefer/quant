@@ -7,13 +7,12 @@
 data_gurufocus()
 }
 \value{
-A \verb{"data.table" "data.frame"} object.
+data.table data.frame
 }
 \description{
-Fetches the stock list provided by
-\href{https://www.gurufocus.com/stock_list.php}{gurufocus.com/stock_list}
+Fetches the stock list provided by gurufocus.com
 }
 \examples{
-stock_list <- data_gurufocus()
+stocks <- data_gurufocus()
 
 }

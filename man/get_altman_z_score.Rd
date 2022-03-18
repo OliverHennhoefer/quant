@@ -4,7 +4,7 @@
 \alias{get_altman_z_score}
 \title{Get Altman Z-score}
 \usage{
-get_zscore(df)
+get_altman_z_score(df)
 }
 \arguments{
 \item{df}{data.frame. Data frame with column 'symbol' containing at least one
@@ -58,7 +58,7 @@ applied on a data set of 33 solvent and 33 insolvent companies
 }
 \examples{
 df <- data.frame('symbol' = 'AAPL')
-res <- get_zscore(df)
+res <- get_altman_z_score(df)
 
 }
 \references{

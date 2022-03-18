@@ -4,7 +4,7 @@
 \alias{get_current_ratio}
 \title{Get Current Ratio}
 \usage{
-get_cratio(df)
+get_current_ratio(df)
 }
 \arguments{
 \item{df}{data.frame. Data frame with column 'symbol' containing at least one
@@ -23,6 +23,6 @@ The Current Ratio measures a comapny's ability to its shot-term obligations.
 }
 \examples{
 df <- data.frame('symbol' = 'AAPL')
-res <- get_cratio(df)
+res <- get_current_ratio(df)
 
 }

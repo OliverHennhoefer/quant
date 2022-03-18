@@ -4,7 +4,7 @@
 \alias{regex_ttm}
 \title{Text-processing of key figure from gurufocus.com}
 \usage{
-scrape_key_fig(df, url, pfx, xpath_txt, xpath_tbl)
+regex_ttm(string)
 }
 \arguments{
 \item{string}{String. The character string to be processed}
@@ -15,5 +15,5 @@ of the last five fiscal years plus current years TTM.
 }
 \description{
 Internal \strong{'quant'}-function for processing the scraped character string
-of key figures provided by \href{https://www.gurufocus.com/new_index/}{gurufocus.com}
+of key figures provided by gurufocus.com
 }

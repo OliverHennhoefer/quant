@@ -4,7 +4,7 @@
 \alias{get_financial_distress}
 \title{Get Probability of Financial Distress}
 \usage{
-get_fin_distress_prob(df)
+get_financial_distress(df)
 }
 \arguments{
 \item{df}{data.frame. Data frame with column 'symbol' containing at least one
@@ -26,6 +26,6 @@ explanatory variables.
 }
 \examples{
 df <- data.frame('symbol' = 'AAPL')
-res <- get_fin_distress_prob(df)
+res <- get_financial_distress(df)
 
 }

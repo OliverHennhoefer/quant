@@ -4,7 +4,7 @@
 \alias{scrape_ownership_fig}
 \title{Get key figure from gurufocus.com}
 \usage{
-scrape_key_fig(df, url, pfx, xpath_txt, xpath_tbl)
+scrape_ownership_fig(df, url, pfx, xpath_txt, xpath_tbl)
 }
 \arguments{
 \item{df}{data.frame. Data frame with a column 'symbol' containing at least

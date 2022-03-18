@@ -4,7 +4,7 @@
 \alias{get_piotroski_f_score}
 \title{Get Piotroski F-Score}
 \usage{
-get_asset_turnover(df)
+get_piotroski_f_score(df)
 }
 \arguments{
 \item{df}{data.frame. Data frame with column 'symbol' containing at least one
@@ -25,6 +25,6 @@ effectively a company is using its assets in order to generate sales.
 }
 \examples{
 df <- data.frame('symbol' = 'AAPL')
-res <- get_asset_turnover(df)
+res <- get_piotroski_f_score(df)
 
 }

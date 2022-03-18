@@ -58,7 +58,7 @@ applied on a data set of 33 solvent and 33 insolvent companies
 }
 \examples{
 df <- data.frame('symbol' = 'AAPL')
-res <- get_zscore(df)
+res <- get_book_value_per_share(df)
 
 }
 \references{
