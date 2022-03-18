@@ -4,6 +4,10 @@ This project heavily relies on data provided by [gurufocus.com](https://www.guru
 Full documentation has yet to be provided.
 
 ```r
+devtools::github_install("OliverHennhoefer/quant")
+```
+
+```r
 df <- data.frame("symbol" = c("AAPL", "MSFT", "BABA"))
 
 df %>%
