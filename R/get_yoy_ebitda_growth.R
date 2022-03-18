@@ -1,26 +1,29 @@
-#' Get Year-over-Year Earnings before Interest, Tax and Appreciation Growth
+#' @title
+#' Get Year-over-Year Earnings before Interest, Tax and Appreciation Growth-Rate
 #'
 #' @description
-#' Wrapper function for fetching data from
-#' [gurufocus.com](https://www.gurufocus.com/term/growth_per_share_ebitda/AAPL/).
+#' Fetching
+#' *Year-over-Year Earnings before Interest, Tax and Appreciation Growth-Rate*
+#' from gurufocus.com
 #'
 #' @usage get_yoy_ebitda_growth(df)
 #'
-#' @param df data.frame. Data frame with column 'symbol' containing at least one
-#' valid stock ticker symbol.
-#'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Year-over-Year Earnings before Interest, Tax and Appreciation Growth** of
-#' the last five fiscal years plus current years TTM.
+#' @param df data.frame. Data.frame with column *symbol* containing at least one
+#' valid ticker symbol of a listed stock.
 #'
 #' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_yoy_ebitda_growth(df)
 #'
 #' @details
-#' YoY EBITDA Growth is the percentage change of EBITDA per Share over the past
-#' twelve months.
+#' *YoY EBITDA Growth* is the percentage change of EBITDA per share.
+#'
+#' @return
+#' The original data.frame supplemented by the company's
+#' **Year-over-Year Earnings before Interest, Tax and Appreciation Growth** of
+#' the last five fiscal years as well as current years TTM value.
+#'
+#' @export
 #'
 get_yoy_ebitda_growth <- function(df) {
 
