@@ -1,17 +1,19 @@
+#' @title
 #' Fetch complete stock list
 #'
-#' Fetches the stock list provided by
-#' [gurufocus.com/stock_list](https://www.gurufocus.com/stock_list.php)
+#' @description
+#' Fetches the stock list provided by gurufocus.com
 #'
-#' @return A `"data.table" "data.frame"` object.
+#' @return
+#' data.table data.frame
 #'
-#' @example
-#' stock_list <- data_gurufocus()
+#' @examples
+#' stocks <- data_gurufocus()
 #'
 data_gurufocus <- function() {
 
   # Prepare Progressbar --------------------------------------------------------
-  total_records <- quant::get_text(
+  total_records <- get_text(
     url = 'https://www.gurufocus.com/stock_list.php?&p=1&n=100',
     xpath = '//*[@id="ajax_content"]/div/div[3]/strong')
 
@@ -34,7 +36,7 @@ data_gurufocus <- function() {
     html_tbl <- rvest::html_table(html_node)
     html_dt <- data.table::as.data.table(html_tbl)
 
-    html_dt[, c(3:ncol(html_dt)) := NULL]
+    html_dt[, (3:ncol(html_dt))] <- NULL
     if(nrow(html_dt) == 0) break
 
     dat <- data.table::rbindlist(dat, html_dt)

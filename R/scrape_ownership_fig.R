@@ -3,7 +3,7 @@
 #' Main internal **'quant'**-function for scraping stock key figures from
 #' [gurufocus.com](https://www.gurufocus.com/new_index/)
 #'
-#' @usage scrape_key_fig(df, url, pfx, xpath_txt, xpath_tbl)
+#' @usage scrape_ownership_fig(df, url, pfx, xpath_txt, xpath_tbl)
 #'
 #' @param df data.frame. Data frame with a column 'symbol' containing at least
 #' one valid stock ticker symbol.
@@ -66,7 +66,7 @@ scrape_ownership_fig<- function(df, url, pfx, xpath_txt, xpath_tbl) {
   }
 
   # Merge scraped data with given data frame -----------------------------------
-  res <- quant::input_merge(df = cdf, input = df)
+  res <- input_merge(df = cdf, input = df)
   return(res)
 
 }

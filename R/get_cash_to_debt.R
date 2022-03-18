@@ -19,8 +19,11 @@
 #'
 #' @details
 #' The Cash-Debt-Ratio measures a company's cash, cash equivalents, marketable
-#' securities relative to its debt. Cash-Debt-Ratios >1 indicate that a company
-#' can pay off its debt using its cash on hand.
+#' securities relative to its debt. A Cash-Debt-Ratio greater 1 indicates that a
+#' company can pay off its debt using its cash on hand.
+#'
+#' It differs from the Cash-Ratio by focusing on current as well as on
+#' non-current liabilities.
 #'
 get_cash_to_debt <- function(df) {
 

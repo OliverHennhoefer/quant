@@ -38,8 +38,8 @@ get_table <- function(url, xpath, name, raw = FALSE) {
   dat_tbl[dat_tbl == "-" | dat_tbl == ""] <- NA
 
   dat_col <- as.logical(!colSums(is.na(dat_tbl)) > 0) #keep columns unequal NA
-  #dat_res <- dat_tbl[-1, dat_col, with = FALSE]
-  dat_res <- dat_tbl[-1, dat_col, drop = FALSE]
+  dat_res <- dat_tbl[-1, dat_col, with = FALSE]
+  #dat_res <- dat_tbl[-1, dat_col, drop = FALSE]
   colnames(dat_res) <- colnames(dat_tbl)[dat_col]
 
   return(dat_res)

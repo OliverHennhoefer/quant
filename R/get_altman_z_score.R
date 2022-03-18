@@ -4,18 +4,18 @@
 #' Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/zscore/AAPL/).
 #'
-#' @usage get_zscore(df)
+#' @usage get_altman_z_score(df)
 #'
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
 #' @return
-#' The original data.frame supplemented by the company's **Altman Z-score**
+#' The original data.frame supplemented by the companys **Altman Z-score**
 #' of the last five fiscal years plus current years TTM.
 #'
 #' @examples
 #' df <- data.frame('symbol' = 'AAPL')
-#' res <- get_zscore(df)
+#' res <- get_altman_z_score(df)
 #'
 #' @details
 #' The Altman Z-Score quantifies the risk of bankruptcy of a company within the
@@ -82,7 +82,6 @@ get_altman_z_score <- function(df) {
   xpath_tbl <- '//*[@id="target_def_historical_data"]/div[2]/div/table'
   xpath_txt <- '//*[@id="def_body_detail_height"]/font[1]'
 
-  # Altman Z-Score -------------------------------------------------------------
   res <- suppressWarnings(scrape_key_fig(df, url, pfx, xpath_txt, xpath_tbl))
 
   return(res)

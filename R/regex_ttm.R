@@ -1,9 +1,9 @@
 #' Text-processing of key figure from gurufocus.com
 #'
 #' Internal **'quant'**-function for processing the scraped character string
-#' of key figures provided by [gurufocus.com](https://www.gurufocus.com/new_index/)
+#' of key figures provided by gurufocus.com
 #'
-#' @usage scrape_key_fig(df, url, pfx, xpath_txt, xpath_tbl)
+#' @usage regex_ttm(string)
 #'
 #' @param string String. The character string to be processed
 #'

@@ -4,7 +4,7 @@
 #' Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/current_ratio/AAPL/).
 #'
-#' @usage get_cratio(df)
+#' @usage get_current_ratio(df)
 #'
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
@@ -15,7 +15,7 @@
 #'
 #' @examples
 #' df <- data.frame('symbol' = 'AAPL')
-#' res <- get_cratio(df)
+#' res <- get_current_ratio(df)
 #'
 #' @details
 #' The Current Ratio measures a comapny's ability to its shot-term obligations.

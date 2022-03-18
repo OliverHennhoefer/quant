@@ -4,7 +4,7 @@
 #' Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
-#' @usage get_asset_turnover(df)
+#' @usage get_piotroski_f_score(df)
 #'
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
@@ -15,7 +15,7 @@
 #'
 #' @examples
 #' df <- data.frame('symbol' = 'AAPL')
-#' res <- get_asset_turnover(df)
+#' res <- get_piotroski_f_score(df)
 #'
 #' @details
 #' The Asset-Turnover-Ratio measures the value of a companys *Net Sales Revenue*

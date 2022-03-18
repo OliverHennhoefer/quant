@@ -19,7 +19,7 @@
 #'
 #' @details
 #' The Insider Ownership is the percentage of shares that are owned by company
-#' insiders relieve to the total shares outstanding. Insiders are a company's
+#' insiders relative to the total shares outstanding. Insiders are a company's
 #' officers, directors, relatives or generally everyone with key information
 #' before made available to the public. High insider ownership can in many cases
 #' be interpreted as a signal of confidence. Larger companies have typically

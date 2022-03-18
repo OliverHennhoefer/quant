@@ -3,9 +3,10 @@
 #' Fetches the stock list provided by
 #' [wikipedia.org](n.wikipedia.org/wiki/List_of_S%26P_500_companies)
 #'
-#' @return A `"data.table" "data.frame"` object.
+#' @return
+#' A `"data.table" "data.frame"` object.
 #'
-#' @example
+#' @examples
 #' sp500 <- data_sp500()
 #'
 data_sp500 <- function() {
@@ -18,11 +19,10 @@ data_sp500 <- function() {
   html_page <- rvest::read_html(url)
   html_node <- rvest::html_nodes(html_page, xpath = xpath)
   html_tbl <- rvest::html_table(html_node)
-  html_dt <- data.table::as.data.table(html_tbl)
+  html_df <- as.data.frame(html_tbl)
 
-  html_dt <- html_dt[, c(1, 2, 4, 5)]
+  html_df <- html_df[, c(1, 2, 4, 5)]
+  colnames(html_df) <- c('symbol', 'company', 'sector', 'subsector')
 
-  data.table::setnames(html_dt, names)
-
-  return(html_dt)
+  return(html_df)
 }

@@ -4,7 +4,7 @@
 #' Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/PFD/AAPL/).
 #'
-#' @usage get_fin_distress_prob(df)
+#' @usage get_financial_distress(df)
 #'
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
@@ -15,7 +15,7 @@
 #'
 #' @examples
 #' df <- data.frame('symbol' = 'AAPL')
-#' res <- get_fin_distress_prob(df)
+#' res <- get_financial_distress(df)
 #'
 #' @details
 #' The Probability of Financial Distress measures the probability that a company

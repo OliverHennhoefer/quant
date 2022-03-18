@@ -15,7 +15,7 @@
 #'
 #' @examples
 #' df <- data.frame('symbol' = 'AAPL')
-#' res <- get_zscore(df)
+#' res <- get_book_value_per_share(df)
 #'
 #' @details
 #' The Altman Z-Score quantifies the risk of bankruptcy of a company within the

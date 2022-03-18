@@ -21,20 +21,24 @@ input_merge <- function(df = NULL, input = NULL) {
   input <- merge(input, df, by = "symbol", suffixes = rep("", 2))
 
   # Clean merged dfa -----------------------------------------------------------
-  input <- input[, !duplicated(colnames(input))]
+  #input <- input[, !duplicated(colnames(input))]
+  #input[, .SD, .SDcols = unique(names(input))]
 
   # Remove insufficient row dfa from scraped KPI -------------------------------
-  kpi <- sub("\\_.*", "", colnames(df)[2])
-  kpi_col <- input[data.table::like(colnames(input), kpi)]
-  #input <- input[!apply(kpi_col, 1, function(x) sum(is.na(x))) > 3, ]
-  input <- input[!duplicated(input$symbol), ]
+  #kpi <- sub("\\_.*", "", colnames(df)[2])
+  #kpi_col <- input[,data.table::like(names(input), "sector"), with = FALSE]
+
+  ##kpi_col <- input[data.table::like(colnames(input), kpi)]
+  ##input <- input[!apply(kpi_col, 1, function(x) sum(is.na(x))) > 3, ]
+  ##input <- input[!duplicated(input$symbol), ]
 
   # Sort columns ---------------------------------------------------------------
   input.first <- input[, 1, drop = FALSE] #Keep 'symbol' in first columns
   input.rest <- input[, -1]
   input <- cbind(input.first, input.rest[ , order(names(input.rest))])
 
-  input <- within(input, rm("remove"))
+  input$remove <- NULL
+  #input <- within(input, rm("remove"))
 
   return(input)
 }

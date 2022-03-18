@@ -51,7 +51,7 @@ scrape_key_fig<- function(df, url, pfx, xpath_txt = NULL, xpath_tbl = NULL) {
     colnames(table)[1] <- "symbol"
 
     ## Check for outdated dataF -------------------------------------------------
-    if (quant::topicality(table)) {
+    if (topicality(table)) {
       table <- data.frame("symbol" = ticker, "ttm" = NA)
       names(table)[2] <- paste0(pfx, "_ttm")
     }
@@ -61,7 +61,7 @@ scrape_key_fig<- function(df, url, pfx, xpath_txt = NULL, xpath_tbl = NULL) {
   }
 
   # Merge scraped data with given data frame -----------------------------------
-  res <- quant::input_merge(df = cdf, input = df)
+  res <- input_merge(df = cdf, input = df)
   return(res)
 
 }
