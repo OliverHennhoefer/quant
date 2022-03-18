@@ -1,7 +1,6 @@
 # Scraping Company Data and other Business Indicators
 
 This project heavily relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) 📊 <br>
-Full documentation has yet to be provided.
 
 ```r
 devtools::github_install("OliverHennhoefer/quant")
