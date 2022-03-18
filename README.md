@@ -13,7 +13,9 @@ df %>%
   1 AAPL   2.30    2.98       2.97      3.28      5.61      5.62
   2 BABA   2.46    3.88       4.97      7.97      8.40      6.97
   3 MSFT   3.25    2.13       5.06      5.76      8.05      8.94
-  
+```
+
+```r
 df %>%
   get_sectors() %>%
   get_interest_coverage()
@@ -30,44 +32,3 @@ This projects gives access to complete financial data of at least 5,000-7,000 st
 📚 Extensive data for 6.000+ unique listings. <br>
 📅 Records from the last five company's fiscal years. <br>
 ♻️ Convenient merging-abilities to update past scraping results. <br>
-:no_entry_sign: Automatically removes insufficient scraping results. <br>
-
-_________________________________________________________
-Current state and capabilities of the project:
-- [x] Complete Stock List (gurufocus.com)
-- [x] Index Stock Lists (SP500, NASDAQ100)
-- [x] Trading Volume (Monthly)
-- [x] Country/Sector/Subsector/MCap
-- [x] Earnings per Share (Diluted)
-- [x] Revenue
-- [x] Price-to-Free-Cashflow
-- [x] ROIC & WACC
-- [X] Price-Earnings-Ratio
-- [x] Piotroski F-Score
-- [x] Interest Coverage
-- [X] Buyback-Ratio
-- [x] Payout-Ratio
-- [x] Goodwill to Asset
-- [x] Altman z-Score 
-- [x] Book Value per Share
-- [x] Cash Per Share
-- [x] Dividends per Share
-- [x] E10 (Shiller P/E-Ratio component)
-- [x] EBIT per Share
-- [x] EBITDA per Share
-- [x] Debt per Share
-- [x] Enterprise Value
-- [x] EPS without Non-Recurring Items
-- [x] Funds from Operations per Share (REITs)
-- [x] Financial Strength
-- [x] Free Cashflow per Share
-- [x] Insider Ownership [%] 
-- [x] Institutional Ownership [%] 
-- [x] Net Current Asset Value
-- [x] Net-Net Working Capital
-- [x] Owners Eearnings per Share (see 1986 Berkshire Hathaway Shareholder Letter)
-- [x] Predictability Rank & Profitability Rank (as calculated by gurufocus.com) 
-- [x] Probability of Financial Distress
-- [x] Scaled Operating Net Assets 
-- [x] Tangible Book Value per Share
-- [x] YoY Revenue/EPS/EBITDA per Share Growth
