@@ -1,4 +1,4 @@
-# Scraping Company Data and other Business Indicators
+# Fetching Stock Data for Fundamental Analysis
 
 This project heavily relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) 📊 <br>
 
