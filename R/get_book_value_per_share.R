@@ -1,3 +1,4 @@
+#' @title
 #' Get Book Value per Share
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the companys **Book Value per Share**
 #' of the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_book_value_per_share(df)
 #'

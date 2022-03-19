@@ -1,3 +1,4 @@
+#' @title
 #' Get Price-Earnings Ratio
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Price Earnings Ratio without Non-Recurring Items** of the last five fiscal
 #' years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_pe_ratio(df)
 #'

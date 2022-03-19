@@ -1,3 +1,4 @@
+#' @title
 #' Get Altman Z-score
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the companys **Altman Z-score**
 #' of the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_altman_z_score(df)
 #'

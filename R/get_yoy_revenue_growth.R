@@ -1,3 +1,4 @@
+#' @title
 #' Get Year-over-Year Revenue Per Share Growth
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Year-over-Year Revenue Per Share Growth** of the last five fiscal years
 #' plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_yoy_revenue_growth(df)
 #'

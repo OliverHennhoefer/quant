@@ -1,3 +1,4 @@
+#' @title
 #' Get Equity-to-Total-Assets Ratio
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Equity-to-Total-Assets Ratio** of the last five fiscal years plus current
 #' years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_equity_to_assets(df)
 #'

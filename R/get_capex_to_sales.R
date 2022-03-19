@@ -1,3 +1,4 @@
+#' @title
 #' Get CAPEX-Sales-Ratio
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the companys **CAPEX-Sales-Ratio** of
 #' the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_capex_to_sales(df)
 #'

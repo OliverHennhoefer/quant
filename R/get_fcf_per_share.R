@@ -1,3 +1,4 @@
+#' @title
 #' Get Free Cash Flow per Share
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Free Cash Flow per Share** of the last five fiscal years plus current years
 #' TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_fcf_per_share(df)
 #'

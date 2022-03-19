@@ -1,3 +1,4 @@
+#' @title
 #' Get Diluted Earnings per Share
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Diluted Earnings per Share ** of the last five fiscal years plus current
 #' years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_diluted_eps(df)
 #'

@@ -1,3 +1,4 @@
+#' @title
 #' Get Debt to EBITDA
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the company's **Debt to EBITDA** of
 #' the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_debt_to_ebitda(df)
 #'

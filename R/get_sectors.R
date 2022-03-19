@@ -1,3 +1,4 @@
+#' @title
 #' Get Sector and Subsector
 #'
 #' @description
@@ -12,7 +13,7 @@
 #' @return
 #' The original data.frame supplemented by the company's sector and sub sector.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_sectors(df)
 #'

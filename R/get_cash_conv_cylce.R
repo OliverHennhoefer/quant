@@ -1,3 +1,4 @@
+#' @title
 #' Get Cash Conversion Cycle
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Cash Conversion Cycle** of the last five fiscal years plus current years
 #' TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_cash_conv_cycle(df)
 #'

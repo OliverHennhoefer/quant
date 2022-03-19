@@ -1,3 +1,4 @@
+#' @title
 #' Get Operating Cash Flow per Share
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Operating Cash Flow per Share** of the last five fiscal years plus current
 #' years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_operating_cash_flow(df)
 #'
@@ -30,7 +31,6 @@ get_operating_cash_flow <- function(df) {
   xpath_tbl <- '//*[@id="target_def_historical_data"]/div[2]/div/table'
   xpath_txt <- '//*[@id="def_body_detail_height"]/font[1]'
 
-  # Altman Z-Score -------------------------------------------------------------
   res <- suppressWarnings(scrape_key_fig(df, url, pfx, xpath_txt, xpath_tbl))
 
   return(res)

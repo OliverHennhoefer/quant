@@ -1,3 +1,4 @@
+#' @title
 #' Get Float Percentage of Total Shares Outstanding
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Float Percentage of Total Shares Outstanding** of the last five fiscal
 #' years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_free_floate(df)
 #'

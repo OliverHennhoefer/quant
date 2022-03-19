@@ -1,3 +1,4 @@
+#' @title
 #' Get Enterprise Value to Earnings before Interest Ratio
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Enterprise Value to Earnings before Interest Ratio** of the last five
 #' fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_ev_to_ebit(df)
 #'

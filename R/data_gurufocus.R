@@ -7,8 +7,8 @@
 #' @return
 #' data.table data.frame
 #'
-#' @examples
-#' stocks <- data_gurufocus()
+#' @example
+#' \donttest{stocks <- data_gurufocus()}
 #'
 data_gurufocus <- function() {
 

@@ -1,3 +1,4 @@
+#' @title
 #' Get Asset-Turnover-Ratio
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the company's **Altman Z-score**
 #' of the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_asset_turnover(df)
 #'

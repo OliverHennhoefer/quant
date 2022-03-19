@@ -1,3 +1,4 @@
+#' @title
 #' Get Forward Rate of Return (Yacktman)
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Forward Rate of Return (Yacktman)** of the last five fiscal years plus
 #' current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_yacktman_forward_return(df)
 #'

@@ -1,4 +1,4 @@
-#' Merge original data frame with scraped data
+#' @title Merge original data frame with scraped data
 #'
 #' Internal function. Merges data.frame resulting from web scraping to the
 #' data.frame provided as input of a respective function.
@@ -7,7 +7,7 @@
 #'
 #' @param input Data.frame. A data.frame provided as original function input.
 #'
-#' @examples
+#' @example
 #' df <- data.frame("symbol" = "STOCK", "eps_2016" = 99)
 #' input <- data.frame("symbol" = "STOCK", "eps_2016" = 99, "eps_2017" = 199)
 #' input_merge(df = df, input = input)

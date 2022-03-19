@@ -9,7 +9,7 @@
 #' @param df data.frame. Data frame with column *symbol* containing at least one
 #' valid stock ticker symbol.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_greenblatt_earnings_yield(df)
 #'

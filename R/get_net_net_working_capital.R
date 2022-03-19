@@ -1,3 +1,4 @@
+#' @title
 #' Get Net-Net Working Capital
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Net-Net Working Capital** of the last five fiscal years plus current years
 #' TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_net_net_working_capital(df)
 #'

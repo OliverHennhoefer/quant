@@ -1,3 +1,4 @@
+#' @title
 #' Get HTML text element
 #'
 #' @param url String. The Uniform Resource Locator of the resource of interest.
@@ -7,7 +8,7 @@
 #' @return
 #' The string to be found under the given XML path and URL.
 #'
-#' @examples
+#' @example
 #' get_text(url = 'https://www.gurufocus.com/stock/AAPL/summary',
 #' xpath = '//*[@id="stock-header"]/div/div[1]/div[1]/div[2]/div/h1/span[1]')
 #'

@@ -1,3 +1,4 @@
+#' @title
 #' Get Price-Earnings-Growth Ratio
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Price-Earnings-Growth Ratio** of the last five fiscal years plus current
 #' years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_peg_ratio(df)
 #'

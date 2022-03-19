@@ -1,3 +1,4 @@
+#' @title
 #' Get Goodwill to Assets Ratio
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Goodwill to Asset Ratio** of the last five fiscal years plus current years
 #' TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_goodwill_to_assets(df)
 #'

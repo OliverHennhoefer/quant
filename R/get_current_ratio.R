@@ -1,3 +1,4 @@
+#' @title
 #' Get Current Ratio
 #'
 #' @description
@@ -13,13 +14,12 @@
 #' The original data.frame supplemented by the company's **Current Ratio**
 #' of the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_current_ratio(df)
 #'
 #' @details
 #' The Current Ratio measures a comapny's ability to its shot-term obligations.
-#'
 #'
 get_current_ratio <- function(df) {
 

@@ -1,3 +1,4 @@
+#' @title
 #' Get Cash-Debt-Ratio
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the companys **Cash-Debt-Ratio**
 #' of the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_cash_to_debt(df)
 #'

@@ -1,3 +1,4 @@
+#' @title
 #' Get Predictability Rank
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the company's **Predictability Rank**
 #' of the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_predictability(df)
 #'

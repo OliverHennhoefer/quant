@@ -11,7 +11,7 @@
 #' @param df data.frame. Data.frame with column *symbol* containing at least one
 #' valid ticker symbol of a listed stock.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_yoy_ebitda_growth(df)
 #'

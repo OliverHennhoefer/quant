@@ -1,3 +1,4 @@
+#' @title
 #' Get Gross Profit to Asset Ratio
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Gross Profit to Asset Ratio** of the last five fiscal years plus current
 #' years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_gross_profit_to_assets(df)
 #'

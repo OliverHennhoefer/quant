@@ -1,3 +1,4 @@
+#' @title
 #' Get Price to Book Ratio
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the company's **Price to Book Ratio**
 #' of the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_price_to_book(df)
 #'

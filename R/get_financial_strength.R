@@ -1,3 +1,4 @@
+#' @title
 #' Get Financial Strength Rank
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the company's current years
 #' **Financial Strength Rank**.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_financial_strength(df)
 #'

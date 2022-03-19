@@ -1,3 +1,4 @@
+#' @title
 #' Get Trading Volume
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the company's average
 #' **Trading Volume** over the last two months.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_trading_volume(df)
 #'

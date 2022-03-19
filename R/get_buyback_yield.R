@@ -1,3 +1,4 @@
+#' @title
 #' Get Buyback Yield
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the company's **Buyback Yield** of
 #' the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_buyback_yield(df)
 #'
@@ -30,7 +31,6 @@ get_buyback_yield <- function(df) {
   xpath_tbl <- '//*[@id="target_def_historical_data"]/div[2]/div/table'
   xpath_txt <- '//*[@id="def_body_detail_height"]/font[1]'
 
-  # Buyback Yield --------------------------------------------------------------
   res <- suppressWarnings(scrape_key_fig(df, url, pfx, xpath_txt, xpath_tbl))
 
   return(res)

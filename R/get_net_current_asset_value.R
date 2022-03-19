@@ -1,3 +1,4 @@
+#' @title
 #' Get Net Current Asset Value
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Net Current Asset Value** of the last five fiscal years plus current years
 #' TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_net_current_asset_value(df)
 #'

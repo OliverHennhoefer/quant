@@ -1,5 +1,7 @@
+#' @title
 #' Get key figure from gurufocus.com
 #'
+#' @description
 #' Main internal **'quant'**-function for scraping stock key figures from
 #' [gurufocus.com](https://www.gurufocus.com/new_index/)
 #'

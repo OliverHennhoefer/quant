@@ -1,3 +1,4 @@
+#' @title
 #' Get Earnings Before Interest, Tax and Depreciation Per Share
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Get Earnings Before Interest, Tax and Depreciation Per Share** of the last
 #' five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_ebitda_per_share(df)
 #'

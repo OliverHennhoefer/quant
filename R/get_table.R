@@ -1,3 +1,4 @@
+#' @title
 #' Get HTML table element
 #'
 #' @param url String. The Uniform Resource Locator of the resource of interest.
@@ -9,7 +10,7 @@
 #' @param raw Logical. Controls whether 'gurufocus.com'-specific data processing
 #' shall be applied to the table.
 #'
-#' @examples
+#' @example
 #' get_table(url = 'https://www.gurufocus.com/term/cash_per_share/AAPL/',
 #'          xpath = '//*[@id="target_def_historical_data"]/div[2]/div/table')
 #'

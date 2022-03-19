@@ -1,3 +1,4 @@
+#' @title
 #' Get Earnings per Share without Non-recurrent Items
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Earnings per Share ex Non-recurrent Items** of the last five fiscal years
 #' plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_eps_ex_nri(df)
 #'

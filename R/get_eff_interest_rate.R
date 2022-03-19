@@ -1,3 +1,4 @@
+#' @title
 #' Effective Annual Interest Rate
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Effective Annual Interest Rate** of the last five fiscal years plus current
 #' years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_eff_interest_rate(df)
 #'

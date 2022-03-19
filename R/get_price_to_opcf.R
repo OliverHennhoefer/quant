@@ -1,3 +1,4 @@
+#' @title
 #' Get Price-to-Operating-Cash-Flow-Ratio
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Price-to-Operating-Cash-Flow-Ratio**
 #' of the last five fiscal years plus current years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_price_to_opcf(df)
 #'

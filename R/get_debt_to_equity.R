@@ -1,3 +1,4 @@
+#' @title
 #' Get Debt to Equity Ratio
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Debt to Equity Ratio** of the last five fiscal years plus current years
 #' TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_debt_to_equity(df)
 #'

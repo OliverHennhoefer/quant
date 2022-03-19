@@ -6,7 +6,7 @@
 #' @return
 #' A `"data.table" "data.frame"` object.
 #'
-#' @examples
+#' @example
 #' sp500 <- data_sp500()
 #'
 data_sp500 <- function() {

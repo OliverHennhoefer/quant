@@ -1,3 +1,4 @@
+#' @title
 #' Get Scaled Net Operating Assets
 #'
 #' @description
@@ -14,7 +15,7 @@
 #' **Scaled Net Operating Assets** of the last five fiscal years plus current
 #' years TTM.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_snoa(df)
 #'

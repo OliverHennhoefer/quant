@@ -1,3 +1,4 @@
+#' @title
 #' Get Probability of Financial Distress
 #'
 #' @description
@@ -13,7 +14,7 @@
 #' The original data.frame supplemented by the company's current
 #' **Probability of Financial Distress**.
 #'
-#' @examples
+#' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_financial_distress(df)
 #'
