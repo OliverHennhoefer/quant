@@ -23,8 +23,3 @@ The Asset-Turnover-Ratio measures the value of a companys \emph{Net Sales Revenu
 relative to the value of its \emph{Total Assets}. The ratio indicates how
 effectively a company is using its assets in order to generate sales.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_asset_turnover(df)
-
-}

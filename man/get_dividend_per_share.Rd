@@ -25,8 +25,3 @@ the total dividends paid out by a business, including interim dividends, over
 a period of time, usually a year, by the number of outstanding ordinary
 shares issued.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_dividend_per_share(df)
-
-}

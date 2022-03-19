@@ -2,7 +2,10 @@
 % Please edit documentation in R/input_merge.R
 \name{input_merge}
 \alias{input_merge}
-\title{Merge original data frame with scraped data}
+\title{Merge original data frame with scraped data
+
+Internal function. Merges data.frame resulting from web scraping to the
+data.frame provided as input of a respective function.}
 \usage{
 input_merge(df = NULL, input = NULL)
 }
@@ -12,11 +15,8 @@ input_merge(df = NULL, input = NULL)
 \item{input}{Data.frame. A data.frame provided as original function input.}
 }
 \description{
+Merge original data frame with scraped data
+
 Internal function. Merges data.frame resulting from web scraping to the
 data.frame provided as input of a respective function.
-}
-\examples{
-df <- data.frame("symbol" = "STOCK", "eps_2016" = 99)
-input <- data.frame("symbol" = "STOCK", "eps_2016" = 99, "eps_2017" = 199)
-input_merge(df = df, input = input)
 }

@@ -23,8 +23,3 @@ Inventory Turnover measures how fast the company turns over its inventory
 within a year. It is calculated as Cost of Goods Sold divided by Total
 Inventories.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_inventory_turnover(df)
-
-}

@@ -24,8 +24,3 @@ expenses on outstanding debt. It is calculated by diving a company's
 Operating Income by its Interest Expense. Higher a coverage are naturally
 better for the financial stability of a company.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_interest_coverage(df)
-
-}

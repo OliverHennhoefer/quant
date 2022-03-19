@@ -21,8 +21,3 @@ Wrapper function for fetching data from
 \details{
 The Current Ratio measures a comapny's ability to its shot-term obligations.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_current_ratio(df)
-
-}

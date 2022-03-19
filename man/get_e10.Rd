@@ -28,8 +28,3 @@ E10 is a concept invented by Prof. Robert Shiller, who uses E10 for his
 Shiller P/E calculation. E10 is the average of the inflation adjusted
 earnings of a company over the past 10 years
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_e10(df)
-
-}

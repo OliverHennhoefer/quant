@@ -34,8 +34,3 @@ be included in (c). However, businesses following the LIFO inventory method
 usually do not require additional working capital if unit volume does not
 change.)"
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_owners_eps(df)
-
-}

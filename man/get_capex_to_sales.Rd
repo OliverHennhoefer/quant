@@ -25,8 +25,3 @@ measure indicates how aggressively a company is reinvesting its revenue into
 productive assets. The interpretation of the ratio depends on how effectively
 a company uses its assets to produce new income.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_capex_to_sales(df)
-
-}

@@ -25,8 +25,3 @@ The Asset-Turnover-Ratio is defined by the Price-to-Earnings Ratio
 indicate overvaluation of a stock, whereas as PEG Ratio <1 may indicate
 undervaluation.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_peg_ratio(df)
-
-}

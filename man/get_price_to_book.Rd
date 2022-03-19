@@ -22,8 +22,3 @@ Wrapper function for fetching data from
 The Asset-Turnover-Ratio measures the market price of a company to its book
 value.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_price_to_book(df)
-
-}

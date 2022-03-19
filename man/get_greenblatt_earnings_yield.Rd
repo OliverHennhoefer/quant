@@ -25,8 +25,3 @@ It only looks at one-year's business operation. For cyclical companies, the
 earnings yield is usually highest at the peak of the business cycle, although
 these earnings are rarely sustainable.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_greenblatt_earnings_yield(df)
-
-}

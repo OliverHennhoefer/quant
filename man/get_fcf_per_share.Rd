@@ -25,8 +25,3 @@ flexibility that is determined by dividing free cash flow by the total number
 of shares outstanding. This measure serves as a proxy for measuring changes
 in earnings per share.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_fcf_per_share(df)
-
-}

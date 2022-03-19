@@ -23,8 +23,3 @@ Wrapper function for fetching data from
 Scaled Net Operating Assets (SNOA) is calculated as the difference between
 operating assets and operating liabilities, scaled by lagged total assets.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_snoa(df)
-
-}

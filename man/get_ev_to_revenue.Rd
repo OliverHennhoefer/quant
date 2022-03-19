@@ -24,8 +24,3 @@ The Enterprise-Value-to-Revenue Ratio is calculated as the company's
 enterprise value relative to its revenue. Often used to value a company
 that does not generate income/profits yet.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_ev_to_revenue(df)
-
-}

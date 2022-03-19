@@ -30,8 +30,3 @@ situation is. The rank is base on following factors:
 }
 Companies with a rank of 3 or less are likely to be in financial distress.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_financial_strength(df)
-
-}

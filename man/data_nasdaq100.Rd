@@ -13,7 +13,3 @@ A \verb{"data.table" "data.frame"} object.
 Fetches the stock list provided by
 \href{https://de.wikipedia.org/wiki/NASDAQ-100}{wikipedia.org}
 }
-\examples{
-nasdaq100 <- data_nasdaq100()
-
-}

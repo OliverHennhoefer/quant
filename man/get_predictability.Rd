@@ -25,8 +25,3 @@ depreciation and amortization) per share over the past ten fiscal years, and
 study the correlation between the stock performances and the predictability
 of the business.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_predictability(df)
-
-}

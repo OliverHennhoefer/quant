@@ -23,8 +23,3 @@ Wrapper function for fetching data from
 YoY EPS Growth is the percentage change of Earnings per Share (Diluted) over
 the past twelve months.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_yoy_eps_growth(df)
-
-}

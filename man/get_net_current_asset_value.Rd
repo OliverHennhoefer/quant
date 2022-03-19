@@ -25,8 +25,3 @@ value is the total worth of all its physical assets, such as fixtures,
 equipment, inventory and real estate. It excludes intangible assets, such as
 intellectual property, brand recognition and goodwill.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_net_current_asset_value(df)
-
-}

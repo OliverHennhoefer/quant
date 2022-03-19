@@ -25,8 +25,3 @@ which is an intangible asset, to its total assets and is a factor in that
 company's valuation. The ratio quantifies a company's brand value and other
 intangible aspects of its valuation.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_goodwill_to_assets(df)
-
-}

@@ -24,8 +24,3 @@ The free float percentage, also known as float percentage of total shares
 outstanding, simply shows the percentage of shares outstanding that trade
 freely.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_free_floate(df)
-
-}

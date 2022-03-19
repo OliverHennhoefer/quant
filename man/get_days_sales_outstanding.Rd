@@ -25,8 +25,3 @@ to receive payment for a sale. A higher Days Sales Outstanding indicates the
 company is getting its payments quickly. Generally DSO <45 days is considered
 low.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_days_sales_outstanding(df)
-
-}

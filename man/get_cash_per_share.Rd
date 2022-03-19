@@ -22,8 +22,3 @@ Wrapper function for fetching data from
 Cash-per-Share gives the cash, cash equivalents and marketable securities
 divided by the shares outstanding.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_cash_per_share(df)
-
-}

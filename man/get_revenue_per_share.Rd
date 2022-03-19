@@ -22,8 +22,3 @@ Wrapper function for fetching data from
 The Asset-Turnover-Ratio measures the value of a company's \emph{Revenue} relative
 to its market capitalization.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_revenue_per_share(df)
-
-}

@@ -23,8 +23,3 @@ Wrapper function for fetching data from
 The Price-to-Operating-Cash-Flow-Ratio measures a company's value relative to
 its Operating Cash Flows.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_price_to_opcf(df)
-
-}

@@ -24,8 +24,3 @@ The Diluted Earnings per Share calculates a company's earnings per share if
 all convertible securities were converted. Dilutive securities aren't common
 stock, but instead securities that can be converted to common stock.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_diluted_eps(df)
-
-}

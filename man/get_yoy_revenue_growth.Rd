@@ -23,8 +23,3 @@ Wrapper function for fetching data from
 YoY Rev. per Sh. Growth is the percentage change of Revenue per Share over
 the past twelve months
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_yoy_revenue_growth(df)
-
-}

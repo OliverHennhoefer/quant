@@ -24,8 +24,3 @@ EBITDA per Share is the amount of Earnings Before Interest, Taxes,
 Depreciation, and Amortization (EBITDA) per outstanding share of the
 company's stock.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_ebitda_per_share(df)
-
-}

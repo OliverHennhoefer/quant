@@ -7,14 +7,11 @@
 sanity(df)
 }
 \arguments{
-\item{df}{Data.frame. A data.frame to be checked for sanity.
-
-return A \verb{"data.table" "data.frame"} object.}
+\item{df}{Data.frame. A data.frame to be checked for sanity.}
+}
+\value{
+A \verb{"data.table" "data.frame"} object.
 }
 \description{
 Internal function. Applies a sanity check on given input parameter(s)
-}
-\examples{
-sanity(data.frame("symbol" = c("AAPL", "MSFT", "BABA")))
-
 }

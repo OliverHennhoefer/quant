@@ -29,8 +29,3 @@ value is calculated by deducting total liabilities from the adjusted current
 assets. Since the measure does not consider long-term assets or liabilities,
 it is unreliable for long-term investments.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_net_net_working_capital(df)
-
-}

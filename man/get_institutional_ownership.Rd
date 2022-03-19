@@ -26,8 +26,3 @@ foundations, endowments and other large entities that manage funds on behalf
 of others relative to the total shares outstanding.High institutional
 ownership can in many cases be interpreted as a signal of confidence.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_institutional_ownership(df)
-
-}

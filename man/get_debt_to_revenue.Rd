@@ -25,8 +25,3 @@ amount of debt you have to your overall income. Lenders, including issuers of
 mortgages, use it as a way to measure your ability to manage the payments you
 make each month and repay the money you have borrowed.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_debt_to_revenue(df)
-
-}

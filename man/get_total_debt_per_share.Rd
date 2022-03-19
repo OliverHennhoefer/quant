@@ -23,8 +23,3 @@ Total Debt per Share is calculated as total debt divided by Shares
 Outstanding (EOP). Total debt is calculated as Long-Term Debt & Capital Lease
 Obligation plus Short-Term Debt & Capital Lease Obligation.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_total_debt_per_share(df)
-
-}

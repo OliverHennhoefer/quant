@@ -23,8 +23,3 @@ Wrapper function for fetching data from
 The Price-to-Free-Cash-Flow-Ratio measures a company's value relative to its
 Free Cash Flows.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_price_to_fcf(df)
-
-}

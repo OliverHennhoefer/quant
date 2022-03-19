@@ -28,8 +28,3 @@ The Profitability Rank is based on the Operating Margin and its 5-year
 average, the Piotroski F-Score, the Consistency of the Profitability and the
 Predictability Rank (see get_predicatability)
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_profitability(df)
-
-}

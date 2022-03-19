@@ -27,8 +27,3 @@ of the firm successfully paying off its debt. Ratios higher than 3 or 4 serve
 as “red flags” and indicate that the company may be financially distressed in
 the future.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_debt_to_ebitda(df)
-
-}

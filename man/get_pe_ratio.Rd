@@ -23,8 +23,3 @@ Wrapper function for fetching data from
 The Price-Earnings Ratio calculated by the earnings divided by the market
 capitalization of a company.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_pe_ratio(df)
-
-}

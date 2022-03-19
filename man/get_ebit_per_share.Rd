@@ -23,8 +23,3 @@ Wrapper function for fetching data from
 EBIT per Share is the amount of Earnings Before Interest and Taxes (EBIT) per
 outstanding share of the company's stock.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_ebit_per_share(df)
-
-}

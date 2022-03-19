@@ -24,8 +24,3 @@ will go bankrupt in the upcoming year given its current financial position.
 The measure is obtained by a logit probability model based on eight
 explanatory variables.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_financial_distress(df)
-
-}

@@ -23,8 +23,3 @@ from gurufocus.com
 \details{
 \emph{YoY EBITDA Growth} is the percentage change of EBITDA per share.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_yoy_ebitda_growth(df)
-
-}

@@ -26,8 +26,3 @@ before made available to the public. High insider ownership can in many cases
 be interpreted as a signal of confidence. Larger companies have typically
 low(er) insider ownership.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_insider_ownership(df)
-
-}

@@ -26,8 +26,3 @@ ratio indicates how liquid a company is.
 It differs from the Cash-to-Debt-Ratio by focusing on current liabilities due
 in the short-term (< 1 year).
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_cash_ratio(df)
-
-}

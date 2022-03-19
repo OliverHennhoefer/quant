@@ -27,8 +27,3 @@ normalized Free Cash Flow of the past seven years, and considers growth.
 The forward rate of return can be thought of as the return that investors
 buying the stock today can expect from it in the future.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_yacktman_forward_return(df)
-
-}

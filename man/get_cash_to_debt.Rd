@@ -26,8 +26,3 @@ company can pay off its debt using its cash on hand.
 It differs from the Cash-Ratio by focusing on current as well as on
 non-current liabilities.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_cash_to_debt(df)
-
-}

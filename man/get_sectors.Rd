@@ -17,8 +17,3 @@ The original data.frame supplemented by the company's sector and sub sector.
 Function for fetching data from
 \href{https://www.gurufocus.com/stock/AAPL/summary}{gurufocus.com}.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_sectors(df)
-
-}

@@ -25,8 +25,3 @@ from the nominal interest rate and expressed as if compound interest was
 payable annually. It makes interest rates between loans with different
 compunding periods more comparable.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_eff_interest_rate(df)
-
-}

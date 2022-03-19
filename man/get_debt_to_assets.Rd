@@ -25,8 +25,3 @@ ownsthe same amount of liabilities or more as its assets and with that is
 highly leveraged. Lower ratios indicate that a company owns more asset than
 liabilities and can meet its oblications by selling assets if needed.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_debt_to_assets(df)
-
-}

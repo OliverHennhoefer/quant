@@ -25,8 +25,3 @@ potential value per share of a company in the event that it must liquidate
 it's assets.
 Assets such as property and equipment are considered tangible assets.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_tangible_book_per_share(df)
-
-}

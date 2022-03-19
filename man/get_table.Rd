@@ -22,8 +22,3 @@ The table to be found under the given XML path and URL.
 \description{
 Get HTML table element
 }
-\examples{
-get_table(url = 'https://www.gurufocus.com/term/cash_per_share/AAPL/',
-         xpath = '//*[@id="target_def_historical_data"]/div[2]/div/table')
-
-}

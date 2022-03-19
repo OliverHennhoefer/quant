@@ -61,11 +61,6 @@ The formula was parameterized by multivariate linear discriminant analysis
 applied on a data set of 33 solvent and 33 insolvent companies
 (see \emph{references}).
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_beneish_mscore(df)
-
-}
 \references{
 Beneish, Messod D. (1999): The Detection of Earnings Manipulation
 in Financial Analysts Journal, Volume 55, Issue 5, p. 24-36

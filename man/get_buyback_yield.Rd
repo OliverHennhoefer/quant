@@ -24,8 +24,3 @@ market capitalization. Higher buyback yields may indicate the managements
 expectation that the stock is undervalued or its attempt to prevent a hostile
 takeover among other reasons.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_buyback_yield(df)
-
-}

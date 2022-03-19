@@ -24,8 +24,3 @@ The Asset-Turnover-Ratio measures the percentage of inventories the company
 currently has on hand to support the current amount of revenue. The ratio
 indicated of a company to manage their inventory levels.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_inventory_to_revenue(df)
-
-}

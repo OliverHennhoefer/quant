@@ -25,8 +25,3 @@ substracting nin-recurring items, the dividends of preferred stocks and
 non-operating income from the total net income. With that the measure gives
 a better impression about the real earnings power of a company.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_eps_ex_nri(df)
-
-}

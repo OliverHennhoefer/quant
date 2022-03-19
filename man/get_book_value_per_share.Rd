@@ -56,11 +56,6 @@ The formula was parameterized by multivariate linear discriminant analysis
 applied on a data set of 33 solvent and 33 insolvent companies
 (see \emph{references}).
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_book_value_per_share(df)
-
-}
 \references{
 Altman, Edward I. (1968): Financial Ratios, Discriminant Analysis and the
 Prediction of Corporate Bankruptcy in The Journal of Finance, Volume 23,

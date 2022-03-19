@@ -23,8 +23,3 @@ The Asset-Turnover-Ratio indicates the average time in day that a company
 takes to turn its inventory, including goods that are work in progress,
 into sales.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_days_inventory(df)
-
-}

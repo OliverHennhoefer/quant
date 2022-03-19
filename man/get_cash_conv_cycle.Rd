@@ -30,8 +30,3 @@ suppliers than it takes the company to sell its inventory and collect its
 money. It is difficult to compare the Cash Conversion Cycle between
 different industries.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_cash_conv_cycle(df)
-
-}

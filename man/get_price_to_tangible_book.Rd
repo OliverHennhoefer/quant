@@ -25,8 +25,3 @@ tangible assets. Tis ratio is applicable mainly to industrial or other
 captial-intensive companies (manufacturers, miner, ...) that own a high
 proportion of hard assets.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_price_to_tangible_book(df)
-
-}

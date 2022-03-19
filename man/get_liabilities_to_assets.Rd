@@ -24,8 +24,3 @@ the company's assets are made of liabilities, calculated as total liabilities
 divided by total assets. The higher the ratio is, the more risk there is in
 the company.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_liabilities_to_assets(df)
-
-}

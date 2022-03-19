@@ -24,8 +24,3 @@ The Asset-Turnover-Ratio is calculated as Gross Profits divided by the firm's
 Total Assets. The ratio determined how efficiently a firm uses its assets to
 generate gross profits.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_gross_profit_to_assets(df)
-
-}

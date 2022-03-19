@@ -12,7 +12,3 @@ data.table data.frame
 \description{
 Fetches the stock list provided by gurufocus.com
 }
-\examples{
-stocks <- data_gurufocus()
-
-}

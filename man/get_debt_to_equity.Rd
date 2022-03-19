@@ -25,8 +25,3 @@ shareholder equity and can be used to evaluate how much leverage a company is
 using. Higher-leverage ratios tend to indicate a company or stock with higher
 risk to shareholders.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_debt_to_equity(df)
-
-}

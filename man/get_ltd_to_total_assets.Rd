@@ -25,8 +25,3 @@ are financed with loans and financial obligations lasting more than one year.
 The ratio gives an indication about a company's ability to meet financial
 requirements for outstanding loans.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_ltd_to_total_assets(df)
-
-}

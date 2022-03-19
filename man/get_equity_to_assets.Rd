@@ -25,8 +25,3 @@ has when compared to the total assets owned by the business or farm. To
 determine the Equity-To-Asset ratio you divide the Net Worth by the Total
 Assets. This ratio is measured as a percentage.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_equity_to_assets(df)
-
-}

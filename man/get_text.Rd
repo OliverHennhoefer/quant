@@ -17,8 +17,3 @@ The string to be found under the given XML path and URL.
 \description{
 Get HTML text element
 }
-\examples{
-get_text(url = 'https://www.gurufocus.com/stock/AAPL/summary',
-xpath = '//*[@id="stock-header"]/div/div[1]/div[1]/div[2]/div/h1/span[1]')
-
-}

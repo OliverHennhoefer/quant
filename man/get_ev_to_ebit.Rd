@@ -24,8 +24,3 @@ The enterprise value to earnings before interest, taxes, depreciation, and
 amortization ratio (EV/EBITDA) compares the value of a company—debt
 included—to the company's cash earnings less non-cash expenses.
 }
-\examples{
-df <- data.frame('symbol' = 'AAPL')
-res <- get_ev_to_ebit(df)
-
-}
