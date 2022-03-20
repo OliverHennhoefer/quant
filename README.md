@@ -3,11 +3,10 @@
 The project relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) and [tipranks.com](https://www.tipranks.com/)<br>
 
 This webscraping toolset provides functionalities for easily gathering stock data for up to the last five fiscal years. <br>
-The toolset provides access to financial data of at least 5,000-7,000 stocks (depending on data availability of the respectice listing).
 
-📚 Extensive data for 6.000+ unique listings. <br>
-📅 Records from the last five company's fiscal years. <br>
-♻️ Convenient merging-abilities to update past scraping results. <br>
+📚 Extensive data for ~6.000+ unique listings. <br>
+📅 Data for the company's last five fiscal years and current years TTM value. <br>
+♻️ Convenient merging-abilities for updating past scraping results. <br>
 
 ## Installation
 ```r
