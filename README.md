@@ -2,11 +2,13 @@
 
 This project heavily relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) 📊 <br>
 
+## Installation
 ```r
 # Github Download 'quant'-package (dev version)
 devtools::github_install('OliverHennhoefer/quant')
 ```
 
+## Application
 ```r
 df <- data.frame("symbol" = c("AAPL", "MSFT", "BABA"))
 
