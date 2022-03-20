@@ -27,7 +27,7 @@ data_gurufocus <- function() {
 
   while(TRUE) {
     utils::setTxtProgressBar(pbar, i)
-    i = i + 1
+    i <- i + 1
 
     url <- paste0("https://www.gurufocus.com/stock_list.php?&p=", i, "&n=100")
 

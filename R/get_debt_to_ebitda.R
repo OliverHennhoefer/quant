@@ -24,7 +24,7 @@
 #' and amortization expenses. Generally, net debt-to-EBITDA ratios of less than
 #' 3 are considered acceptable. The lower the ratio, the higher the probability
 #' of the firm successfully paying off its debt. Ratios higher than 3 or 4 serve
-#' as “red flags” and indicate that the company may be financially distressed in
+#' as red flags and indicate that the company may be financially distressed in
 #' the future.
 #'
 get_debt_to_ebitda <- function(df) {

@@ -21,8 +21,8 @@
 #'
 #' @details
 #' The Price-Tangible-Book-Ratio measures a company's market value to its
-#' tangible assets. Tis ratio is applicable mainly to industrial or other
-#' captial-intensive companies (manufacturers, miner, ...) that own a high
+#' tangible assets. This ratio is applicable mainly to industrial or other
+#' capital-intensive companies (manufacturers, miner, ...) that own a high
 #' proportion of hard assets.
 #'
 get_price_to_tangible_book <- function(df) {

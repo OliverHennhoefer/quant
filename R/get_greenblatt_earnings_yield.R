@@ -2,7 +2,7 @@
 #' Get Earnings Yield (Formula by Joel Greenblatt)
 #'
 #' @description
-#' Fetching *Eanings Yield (Formula by Joel Greenblatt)* from gurufocus.com.
+#' Fetching *Earnings Yield (Formula by Joel Greenblatt)* from gurufocus.com.
 #'
 #' @usage get_greenblatt_earnings_yield(df)
 #'
@@ -22,7 +22,7 @@
 #'
 #' @return
 #' The original data.frame supplemented by the company's
-#' **Eanings Yield (Joel Greenblatt)** of the last five fiscal years as well as
+#' **Earnings Yield (Joel Greenblatt)** of the last five fiscal years as well as
 #' it's current years TTM value.
 #'
 #' @export

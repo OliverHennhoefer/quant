@@ -11,7 +11,7 @@ topicality <- function(table) {
 
   year_now <- data.table::year(Sys.time())
 
-  if( oldest_year < (year_now - 6) | # oldest table year not older than six years
+  if( oldest_year < (year_now - 6) | # oldest table year not older than six yrs
       oldest_year > (year_now + 1) | # oldest table year not in the future
       ncol(table) < 2) {             # number table columns > 2
     return(TRUE)

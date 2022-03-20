@@ -21,9 +21,9 @@
 #' @details
 #' The Asset-Turnover-Ratio is a leverage ratio that defines the total amount of
 #' debt relative to a company's assets. A ratio of about >= 1 means a company
-#' ownsthe same amount of liabilities or more as its assets and with that is
+#' owns the same amount of liabilities or more as its assets and with that is
 #' highly leveraged. Lower ratios indicate that a company owns more asset than
-#' liabilities and can meet its oblications by selling assets if needed.
+#' liabilities and can meet its obligations by selling assets if needed.
 #'
 get_debt_to_assets <- function(df) {
 

@@ -1,7 +1,7 @@
-#' @title Get key figure from gurufocus.com
+#' @title Scrape Key Figures from gurufocus.com
 #'
 #' Main internal **'quant'**-function for scraping stock key figures from
-#' [gurufocus.com](https://www.gurufocus.com/new_index/)
+#' [gurufocus.com](https://www.gurufocus.com/dashboard)
 #'
 #' @usage scrape_key_fig(df, url, pfx, xpath_txt, xpath_tbl)
 #'
@@ -50,7 +50,7 @@ scrape_key_fig<- function(df, url, pfx, xpath_txt = NULL, xpath_tbl = NULL) {
     table <- cbind(ticker, table, df_num)
     colnames(table)[1] <- "symbol"
 
-    ## Check for outdated dataF -------------------------------------------------
+    ## Check for outdated dataF ------------------------------------------------
     if (topicality(table)) {
       table <- data.frame("symbol" = ticker, "ttm" = NA)
       names(table)[2] <- paste0(pfx, "_ttm")

@@ -19,9 +19,10 @@
 #' res <- get_piotroski_f_score(df)
 #'
 #' @details
-#' The Asset-Turnover-Ratio measures the value of a companys *Net Sales Revenue*
-#' relative to the value of its *Total Assets*. The ratio indicates how
-#' effectively a company is using its assets in order to generate sales.
+#' The Asset-Turnover-Ratio measures the value of a company's
+#' *Net Sales Revenue* relative to the value of its *Total Assets*. The ratio
+#' indicates how effectively a company is using its assets in order to generate
+#' sales.
 #'
 get_piotroski_f_score<- function(df) {
 

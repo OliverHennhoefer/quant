@@ -21,7 +21,7 @@
 #'
 #' @details
 #' The Asset-Turnover-Ratio gives the price to earnings ratio without the
-#' potentially misleading effects if non-recurring items (eg. sale of a major
+#' potentially misleading effects if non-recurring items (e.g. sale of a major
 #' asset). The ratio only considers regular operating income.
 #'
 get_pe_ratio_nri <- function(df) {

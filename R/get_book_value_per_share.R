@@ -11,8 +11,9 @@
 #' valid stock ticker symbol.
 #'
 #' @return
-#' The original data.frame supplemented by the companys **Book Value per Share**
-#' of the last five fiscal years plus current years TTM.
+#' The original data.frame supplemented by the company's
+#' **Book Value per Share** of the last five fiscal years plus current years
+#' TTM.
 #'
 #' @example
 #' df <- data.frame('symbol' = 'AAPL')
@@ -66,7 +67,7 @@
 #' p. 1721-1742
 #' @references
 #' Altman, Edward I. (2000): Predicting Financial Distress of Companies:
-#' Revisiting the Z-Score and Zeta Models, Wokring Paper, New York University
+#' Revisiting the Z-Score and Zeta Models, Working Paper, New York University
 #' @references
 #' Altman, Edward I. (2002): Revisiting Credit Scoring Models in a Basel 2
 #' Environment, Working Paper, Stern School of Business, New York University

@@ -20,7 +20,7 @@
 #' res <- get_institutional_ownership(df)
 #'
 #' @details
-#' The Insitutional Ownership is the percentage of shares that are owned by
+#' The Institutional Ownership is the percentage of shares that are owned by
 #' mutual or pension funds, insurance companies, investment firms, private
 #' foundations, endowments and other large entities that manage funds on behalf
 #' of others relative to the total shares outstanding.High institutional

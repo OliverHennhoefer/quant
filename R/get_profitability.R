@@ -19,14 +19,14 @@
 #' res <- get_profitability(df)
 #'
 #' @details
-#' GuruFocus.com calculated the Profitability Rank by how profitable a company
+#' Gurufocus.com calculated the Profitability Rank by how profitable a company
 #' is and how likely the company's business will stay that way. The maximum rank
 #' is 10. A rank of 7 or higher means a higher profitability and may stay that
 #' way. A rank of 3 or lower indicates that the company has had trouble to make
 #' a profit.
 #' The Profitability Rank is based on the Operating Margin and its 5-year
 #' average, the Piotroski F-Score, the Consistency of the Profitability and the
-#' Predictability Rank (see get_predicatability)
+#' Predictability Rank (see get_predictability)
 #'
 #'
 get_profitability <- function(df) {

@@ -11,15 +11,15 @@
 #' valid stock ticker symbol.
 #'
 #' @return
-#' The original data.frame supplemented by the companys **CAPEX-Sales-Ratio** of
-#' the last five fiscal years plus current years TTM.
+#' The original data.frame supplemented by the company's **CAPEX-Sales-Ratio**
+#' of the last five fiscal years plus current years TTM.
 #'
 #' @example
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_capex_to_sales(df)
 #'
 #' @details
-#' The CAPEX-Sales-Ratio measures a companys investments into property, plant,
+#' The CAPEX-Sales-Ratio measures a company's investments into property, plant,
 #' equipment and other capital assets (CAPEX) relative to its total sales. The
 #' measure indicates how aggressively a company is reinvesting its revenue into
 #' productive assets. The interpretation of the ratio depends on how effectively

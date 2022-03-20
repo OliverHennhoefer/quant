@@ -1,9 +1,9 @@
 #' @title
-#' Get key figure from gurufocus.com
+#' Get Key Figure from gurufocus.com
 #'
 #' @description
-#' Main internal **'quant'**-function for scraping stock key figures from
-#' [gurufocus.com](https://www.gurufocus.com/new_index/)
+#' Function for fetching data from
+#' [gurufocus.com](https://www.gurufocus.com/term/InstitutionalOwnership/AAPL/).
 #'
 #' @usage scrape_ownership_fig(df, url, pfx, xpath_txt, xpath_tbl)
 #'
@@ -22,7 +22,7 @@
 #' The input data frame supplemented by a company's respective key figure value
 #' of the last five fiscal years plus current years TTM.
 #'
-scrape_ownership_fig<- function(df, url, pfx, xpath_txt, xpath_tbl) {
+scrape_ownership_fig <- function(df, url, pfx, xpath_txt, xpath_tbl) {
 
   sanity(df)
 
@@ -40,7 +40,7 @@ scrape_ownership_fig<- function(df, url, pfx, xpath_txt, xpath_tbl) {
     ## Scrape table data -------------------------------------------------------
     table <- get_table(src_url, xpath = xpath_tbl,
                        name = paste0(pfx, "_20"),
-                       raw = T)
+                       raw = TRUE)
     colnames(table) <- as.character(table[1, ])
     table <- table[-1,]
 

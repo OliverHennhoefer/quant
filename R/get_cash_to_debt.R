@@ -11,7 +11,7 @@
 #' valid stock ticker symbol.
 #'
 #' @return
-#' The original data.frame supplemented by the companys **Cash-Debt-Ratio**
+#' The original data.frame supplemented by the company's **Cash-Debt-Ratio**
 #' of the last five fiscal years plus current years TTM.
 #'
 #' @example

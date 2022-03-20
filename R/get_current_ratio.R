@@ -19,7 +19,7 @@
 #' res <- get_current_ratio(df)
 #'
 #' @details
-#' The Current Ratio measures a comapny's ability to its shot-term obligations.
+#' The Current Ratio measures a company's ability to its shot-term obligations.
 #'
 get_current_ratio <- function(df) {
 

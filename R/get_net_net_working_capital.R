@@ -23,7 +23,7 @@
 #' The Net-Net Working Capital technique was developed by Benjamin Graham, in
 #' which a company is valued based on its net-current assets per share (NCAVPS).
 #' The Net-Net Working Capital is calculated based on current assets, taking
-#' cash and cash equivalents at full value, then reducing accounts reseivable
+#' cash and cash equivalents at full value, then reducing accounts receivable
 #' for doubtful accounts and reducing inventories to liquidation values. Net-net
 #' value is calculated by deducting total liabilities from the adjusted current
 #' assets. Since the measure does not consider long-term assets or liabilities,
