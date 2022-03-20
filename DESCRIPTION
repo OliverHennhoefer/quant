@@ -1,21 +1,20 @@
 Package: quant
-Title: Provides functions for conveniently accessing quantitative stock data offered by gurufocus.com
+Title: Provides Functions for Conveniently Accessing Quantitative Stock Data Offered by Gurufocus.com
 Version: 0.0.0.9000
 Authors@R: 
-    person("Oliver", "Hennhöfer", , "oliver.hennhoefer@mail.de", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: The package provides functions for fetching operating data, fundamentals, valuation ratios etc. for thousands of publicly traded companies from gurufocus.com.
+    person("Oliver", "Hennhoefer", , "oliver.hennhoefer@mail.de", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-9834-4685"))
+Description: Provides functions for fetching operating data, fundamentals, valuation ratios etc. for thousands of publicly traded companies from gurufocus.com.
+URL: https://github.com/OliverHennhoefer/quant
+Language: en-US
 Imports:
 	plyr,
 	data.table,
-	dplyr,
 	rvest,
-	utils,
-	methods,
-	quantmod,
-	xts
+	utils
 License: MIT + file LICENSE
 Encoding: UTF-8
+BugReports: https://github.com
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Suggests: 
