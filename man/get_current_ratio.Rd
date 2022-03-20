@@ -19,5 +19,5 @@ Wrapper function for fetching data from
 \href{https://www.gurufocus.com/term/current_ratio/AAPL/}{gurufocus.com}.
 }
 \details{
-The Current Ratio measures a comapny's ability to its shot-term obligations.
+The Current Ratio measures a company's ability to its shot-term obligations.
 }

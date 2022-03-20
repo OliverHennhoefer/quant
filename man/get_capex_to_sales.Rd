@@ -11,15 +11,15 @@ get_capex_to_sales(df)
 valid stock ticker symbol.}
 }
 \value{
-The original data.frame supplemented by the companys \strong{CAPEX-Sales-Ratio} of
-the last five fiscal years plus current years TTM.
+The original data.frame supplemented by the company's \strong{CAPEX-Sales-Ratio}
+of the last five fiscal years plus current years TTM.
 }
 \description{
 Wrapper function for fetching data from
 \href{https://www.gurufocus.com/term/capex_to_revenue/AAPL/}{gurufocus.com}.
 }
 \details{
-The CAPEX-Sales-Ratio measures a companys investments into property, plant,
+The CAPEX-Sales-Ratio measures a company's investments into property, plant,
 equipment and other capital assets (CAPEX) relative to its total sales. The
 measure indicates how aggressively a company is reinvesting its revenue into
 productive assets. The interpretation of the ratio depends on how effectively

@@ -2,10 +2,10 @@
 % Please edit documentation in R/scrape_key_fig.R
 \name{scrape_key_fig}
 \alias{scrape_key_fig}
-\title{Get key figure from gurufocus.com
+\title{Scrape Key Figures from gurufocus.com
 
 Main internal \strong{'quant'}-function for scraping stock key figures from
-\href{https://www.gurufocus.com/new_index/}{gurufocus.com}}
+\href{https://www.gurufocus.com/dashboard}{gurufocus.com}}
 \usage{
 scrape_key_fig(df, url, pfx, xpath_txt, xpath_tbl)
 }
@@ -26,8 +26,8 @@ The input data frame supplemented by a company's respective key figure value
 of the last five fiscal years plus current years TTM.
 }
 \description{
-Get key figure from gurufocus.com
+Scrape Key Figures from gurufocus.com
 
 Main internal \strong{'quant'}-function for scraping stock key figures from
-\href{https://www.gurufocus.com/new_index/}{gurufocus.com}
+\href{https://www.gurufocus.com/dashboard}{gurufocus.com}
 }

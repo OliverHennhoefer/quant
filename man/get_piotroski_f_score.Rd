@@ -19,7 +19,8 @@ Wrapper function for fetching data from
 \href{https://www.gurufocus.com/term/turnover/AAPL/}{gurufocus.com}.
 }
 \details{
-The Asset-Turnover-Ratio measures the value of a companys \emph{Net Sales Revenue}
-relative to the value of its \emph{Total Assets}. The ratio indicates how
-effectively a company is using its assets in order to generate sales.
+The Asset-Turnover-Ratio measures the value of a company's
+\emph{Net Sales Revenue} relative to the value of its \emph{Total Assets}. The ratio
+indicates how effectively a company is using its assets in order to generate
+sales.
 }

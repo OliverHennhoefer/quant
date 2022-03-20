@@ -12,11 +12,11 @@ valid stock ticker symbol.}
 }
 \value{
 The original data.frame supplemented by the company's
-\strong{Eanings Yield (Joel Greenblatt)} of the last five fiscal years as well as
+\strong{Earnings Yield (Joel Greenblatt)} of the last five fiscal years as well as
 it's current years TTM value.
 }
 \description{
-Fetching \emph{Eanings Yield (Formula by Joel Greenblatt)} from gurufocus.com.
+Fetching \emph{Earnings Yield (Formula by Joel Greenblatt)} from gurufocus.com.
 }
 \details{
 \emph{Joel Greenblatt's definition of Earnings Yield} has the same problems the

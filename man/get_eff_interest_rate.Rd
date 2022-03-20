@@ -23,5 +23,5 @@ Wrapper function for fetching data from
 The Effective Annual Interest Rate is the interest rate on a loan restated
 from the nominal interest rate and expressed as if compound interest was
 payable annually. It makes interest rates between loans with different
-compunding periods more comparable.
+compounding periods more comparable.
 }

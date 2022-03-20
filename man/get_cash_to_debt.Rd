@@ -11,7 +11,7 @@ get_cash_to_debt(df)
 valid stock ticker symbol.}
 }
 \value{
-The original data.frame supplemented by the companys \strong{Cash-Debt-Ratio}
+The original data.frame supplemented by the company's \strong{Cash-Debt-Ratio}
 of the last five fiscal years plus current years TTM.
 }
 \description{

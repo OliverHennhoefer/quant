@@ -2,7 +2,7 @@
 % Please edit documentation in R/scrape_ownership_fig.R
 \name{scrape_ownership_fig}
 \alias{scrape_ownership_fig}
-\title{Get key figure from gurufocus.com}
+\title{Get Key Figure from gurufocus.com}
 \usage{
 scrape_ownership_fig(df, url, pfx, xpath_txt, xpath_tbl)
 }
@@ -23,6 +23,6 @@ The input data frame supplemented by a company's respective key figure value
 of the last five fiscal years plus current years TTM.
 }
 \description{
-Main internal \strong{'quant'}-function for scraping stock key figures from
-\href{https://www.gurufocus.com/new_index/}{gurufocus.com}
+Function for fetching data from
+\href{https://www.gurufocus.com/term/InstitutionalOwnership/AAPL/}{gurufocus.com}
 }

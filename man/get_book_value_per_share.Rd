@@ -11,8 +11,9 @@ get_book_value_per_share(df)
 valid stock ticker symbol.}
 }
 \value{
-The original data.frame supplemented by the companys \strong{Book Value per Share}
-of the last five fiscal years plus current years TTM.
+The original data.frame supplemented by the company's
+\strong{Book Value per Share} of the last five fiscal years plus current years
+TTM.
 }
 \description{
 Wrapper function for fetching data from
@@ -66,7 +67,7 @@ over the last 20 Years in Journal of Banking and Finance, Volume 21,
 p. 1721-1742
 
 Altman, Edward I. (2000): Predicting Financial Distress of Companies:
-Revisiting the Z-Score and Zeta Models, Wokring Paper, New York University
+Revisiting the Z-Score and Zeta Models, Working Paper, New York University
 
 Altman, Edward I. (2002): Revisiting Credit Scoring Models in a Basel 2
 Environment, Working Paper, Stern School of Business, New York University

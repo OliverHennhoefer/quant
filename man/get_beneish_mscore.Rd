@@ -19,7 +19,7 @@ Wrapper function for fetching data from
 \href{https://www.gurufocus.com/term/mscore/AAPL/}{gurufocus.com}.
 
 The Beneish M-Score quantifies the likelihood of reported earnings
-manipulation. The M-Score is a probabalistic model that classifies the rated
+manipulation. The M-Score is a probabilistic model that classifies the rated
 company either into the category "Unlikely Manipulator" (M-Score>=-1.78) or
 "Likely Manipulator" (M-Score>-1.78). The M-Score must not be applied among
 financial firms like banks and insurance companies due to their very specific

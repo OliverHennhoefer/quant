@@ -22,8 +22,8 @@ Wrapper function for fetching data from
 E10 is a main component used to calculate Shiller PE Ratio. If the month end
 stock price for this stock is zero, result may not be accurate due to the
 exchange rate between different shares and the data will not be stored into
-our database. Selected historical data showed in the calculation sectione
-below is only for demostration purpose.
+our database. Selected historical data showed in the calculation section
+below is only for demonstration purpose.
 E10 is a concept invented by Prof. Robert Shiller, who uses E10 for his
 Shiller P/E calculation. E10 is the average of the inflation adjusted
 earnings of a company over the past 10 years

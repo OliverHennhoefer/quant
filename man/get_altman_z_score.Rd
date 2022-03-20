@@ -11,7 +11,7 @@ get_altman_z_score(df)
 valid stock ticker symbol.}
 }
 \value{
-The original data.frame supplemented by the companys \strong{Altman Z-score}
+The original data.frame supplemented by the company's \strong{Altman Z-score}
 of the last five fiscal years plus current years TTM.
 }
 \description{
@@ -66,7 +66,7 @@ over the last 20 Years in Journal of Banking and Finance, Volume 21,
 p. 1721-1742
 
 Altman, Edward I. (2000): Predicting Financial Distress of Companies:
-Revisiting the Z-Score and Zeta Models, Wokring Paper, New York University
+Revisiting the Z-Score and Zeta Models, Working Paper, New York University
 
 Altman, Edward I. (2002): Revisiting Credit Scoring Models in a Basel 2
 Environment, Working Paper, Stern School of Business, New York University
