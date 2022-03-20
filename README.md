@@ -1,6 +1,6 @@
 # Fetching Stock Data for Fundamental Analysis
 
-This project heavily relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) 📊 <br>
+This project relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) and [tipranks.com](https://www.tipranks.com/)<br>
 
 ## Installation
 ```r
