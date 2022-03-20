@@ -3,7 +3,8 @@
 This project heavily relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) 📊 <br>
 
 ```r
-devtools::github_install("OliverHennhoefer/quant")
+# Github Download (dev version)
+devtools::github_install('OliverHennhoefer/quant')
 ```
 
 ```r
