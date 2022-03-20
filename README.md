@@ -2,6 +2,13 @@
 
 This project relies on data provided by [gurufocus.com](https://www.gurufocus.com/new_index/) and [tipranks.com](https://www.tipranks.com/)<br>
 
+This webscraping toolset provides functionalities for easily gathering stock data for the last five fiscal years. <br>
+This projects gives access to complete financial data of at least 5,000-7,000 stocks - depending on the indicator and the corresponding listing itself.
+
+📚 Extensive data for 6.000+ unique listings. <br>
+📅 Records from the last five company's fiscal years. <br>
+♻️ Convenient merging-abilities to update past scraping results. <br>
+
 ## Installation
 ```r
 # Github Download 'quant'-package (dev version)
@@ -37,10 +44,3 @@ df %>%
   2 BABA   Consumer Cyclical  Retail - Cyclical 0.29          9                                 
   3 MSFT   Technology         Software          0.03          10
 ```
-
-This webscraping toolset provides functionalities for easily gathering stock data for the last five fiscal years. <br>
-This projects gives access to complete financial data of at least 5,000-7,000 stocks - depending on the indicator and the corresponding listing itself.
-
-📚 Extensive data for 6.000+ unique listings. <br>
-📅 Records from the last five company's fiscal years. <br>
-♻️ Convenient merging-abilities to update past scraping results. <br>
