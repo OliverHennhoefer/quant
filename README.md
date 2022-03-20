@@ -33,7 +33,7 @@ df %>%
 >   Symbol Sector             Subsector         Fin.Distress  Profitability  
   1 AAPL   Technology         Hardware          0.02          10
   2 BABA   Consumer Cyclical  Retail - Cyclical 0.29          9                                 
-  3 MSFT   Technology         Software          0.03          !=
+  3 MSFT   Technology         Software          0.03          10
 ```
 
 This webscraping toolset provides functionalities for easily gathering stock data for the last five fiscal years. <br>
