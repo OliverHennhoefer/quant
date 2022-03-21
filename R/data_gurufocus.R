@@ -10,6 +10,8 @@
 #' @example
 #' \donttest{stocks <- data_gurufocus()}
 #'
+#' @export
+#'
 data_gurufocus <- function() {
 
   # Prepare Progressbar --------------------------------------------------------
