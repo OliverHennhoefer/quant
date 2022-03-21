@@ -29,6 +29,8 @@
 #' assets. Since the measure does not consider long-term assets or liabilities,
 #' it is unreliable for long-term investments.
 #'
+#' @export
+#'
 get_net_net_working_capital <- function(df) {
 
   pfx <- 'nnwc'

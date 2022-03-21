@@ -77,6 +77,8 @@
 #' international Context: A Review and empirical Analysis of Altman's Z-Score
 #' Model, Working Paper, Stern School of Business, New York University
 #'
+#' @export
+#'
 get_book_value_per_share <- function(df) {
 
   pfx <- 'bvps'

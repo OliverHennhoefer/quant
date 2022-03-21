@@ -24,6 +24,8 @@
 #' indicates how effectively a company is using its assets in order to generate
 #' sales.
 #'
+#' @export
+#'
 get_piotroski_f_score<- function(df) {
 
   pfx <- 'fscore'

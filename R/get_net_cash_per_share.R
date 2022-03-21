@@ -22,6 +22,8 @@
 #' Net Cash per Share is calculated by taking all a company's cash, less all
 #' current liabilities and dividing that number by the total shares outstanding.
 #'
+#' @export
+#'
 get_net_cash_per_share <- function(df) {
 
   pfx <- 'ncps'

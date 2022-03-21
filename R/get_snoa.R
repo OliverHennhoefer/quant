@@ -23,6 +23,8 @@
 #' Scaled Net Operating Assets (SNOA) is calculated as the difference between
 #' operating assets and operating liabilities, scaled by lagged total assets.
 #'
+#' @export
+#'
 get_snoa <- function(df) {
 
   pfx <- 'snoa'

@@ -25,6 +25,8 @@
 #' The ratio gives an indication about a company's ability to meet financial
 #' requirements for outstanding loans.
 #'
+#' @export
+#'
 get_ltd_to_total_assets <- function(df) {
 
   pfx <- 'ltd2asset'

@@ -21,6 +21,8 @@
 #' @details
 #' The Current Ratio measures a company's ability to its shot-term obligations.
 #'
+#' @export
+#'
 get_current_ratio <- function(df) {
 
   pfx <- 'current_ratio'

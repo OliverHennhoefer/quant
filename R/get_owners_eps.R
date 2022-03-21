@@ -34,6 +34,8 @@
 #' usually do not require additional working capital if unit volume does not
 #' change.)"
 #'
+#' @export
+#'
 get_owners_eps <- function(df) {
 
   pfx <- 'owners.eps'

@@ -25,6 +25,8 @@
 #' non-operating income from the total net income. With that the measure gives
 #' a better impression about the real earnings power of a company.
 #'
+#' @export
+#'
 get_eps_ex_nri <- function(df) {
 
   pfx <- 'epsnri'

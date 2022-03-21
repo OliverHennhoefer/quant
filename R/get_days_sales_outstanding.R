@@ -25,6 +25,8 @@
 #' company is getting its payments quickly. Generally DSO <45 days is considered
 #' low.
 #'
+#' @export
+#'
 get_days_sales_outstanding <- function(df) {
 
   pfx <- 'DaysSalesOutstanding'

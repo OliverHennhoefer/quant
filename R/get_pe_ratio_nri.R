@@ -24,6 +24,8 @@
 #' potentially misleading effects if non-recurring items (e.g. sale of a major
 #' asset). The ratio only considers regular operating income.
 #'
+#' @export
+#'
 get_pe_ratio_nri <- function(df) {
 
   pfx <- 'pe_nri'

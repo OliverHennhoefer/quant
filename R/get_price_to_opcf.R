@@ -23,6 +23,8 @@
 #' The Price-to-Operating-Cash-Flow-Ratio measures a company's value relative to
 #' its Operating Cash Flows.
 #'
+#' @export
+#'
 get_price_to_opcf <- function(df) {
 
   pfx <- 'pocf'

@@ -24,6 +24,8 @@
 #' all convertible securities were converted. Dilutive securities aren't common
 #' stock, but instead securities that can be converted to common stock.
 #'
+#' @export
+#'
 get_diluted_eps <- function(df) {
 
   pfx <- 'epsd'

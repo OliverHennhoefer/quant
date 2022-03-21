@@ -25,6 +25,8 @@
 #' productive assets. The interpretation of the ratio depends on how effectively
 #' a company uses its assets to produce new income.
 #'
+#' @export
+#'
 get_capex_to_sales <- function(df) {
 
   pfx <- 'capex2rev'

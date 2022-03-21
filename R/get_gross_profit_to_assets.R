@@ -24,6 +24,8 @@
 #' Total Assets. The ratio determined how efficiently a firm uses its assets to
 #' generate gross profits.
 #'
+#' @export
+#'
 get_gross_profit_to_assets <- function(df) {
 
   pfx <- 'grossprofit2asset'

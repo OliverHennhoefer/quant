@@ -23,6 +23,8 @@
 #' within a year. It is calculated as Cost of Goods Sold divided by Total
 #' Inventories.
 #'
+#' @export
+#'
 get_inventory_turnover <- function(df) {
 
   pfx <- 'inventory_turnover'

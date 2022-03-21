@@ -25,6 +25,8 @@
 #' of shares outstanding. This measure serves as a proxy for measuring changes
 #' in earnings per share.
 #'
+#' @export
+#'
 get_fcf_per_share <- function(df) {
 
   pfx <- 'fcfps'

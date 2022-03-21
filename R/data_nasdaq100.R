@@ -5,8 +5,10 @@
 #'
 #' @return A `"data.table" "data.frame"` object.
 #'
-#' @exampl
+#' @example
 #' nasdaq100 <- data_nasdaq100()
+#'
+#' @example
 #'
 data_nasdaq100 <- function() {
 

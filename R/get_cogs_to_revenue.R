@@ -25,6 +25,8 @@
 #' the company over the same time period. Higher values may indicate
 #' inefficiencies in procurement and/or production processes.
 #'
+#' @export
+#'
 get_cogs_to_revenue <- function(df) {
 
   pfx <- 'cogs2rev'

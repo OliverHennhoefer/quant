@@ -25,6 +25,8 @@
 #' using. Higher-leverage ratios tend to indicate a company or stock with higher
 #' risk to shareholders.
 #'
+#' @export
+#'
 get_debt_to_equity <- function(df) {
 
   pfx <- 'deb2equity'

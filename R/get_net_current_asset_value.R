@@ -25,6 +25,8 @@
 #' equipment, inventory and real estate. It excludes intangible assets, such as
 #' intellectual property, brand recognition and goodwill.
 #'
+#' @export
+#'
 get_net_current_asset_value <- function(df) {
 
   pfx <- 'ncav'

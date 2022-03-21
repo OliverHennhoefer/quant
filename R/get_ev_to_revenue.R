@@ -24,6 +24,8 @@
 #' enterprise value relative to its revenue. Often used to value a company
 #' that does not generate income/profits yet.
 #'
+#' @export
+#'
 get_ev_to_revenue <- function(df) {
 
   pfx <- 'ev2rev'

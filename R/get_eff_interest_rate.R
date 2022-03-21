@@ -25,6 +25,8 @@
 #' payable annually. It makes interest rates between loans with different
 #' compounding periods more comparable.
 #'
+#' @export
+#'
 get_eff_interest_rate <- function(df) {
 
   pfx <- 'EffectiveInterestRate'

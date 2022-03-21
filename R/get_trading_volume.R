@@ -18,6 +18,8 @@
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_trading_volume(df)
 #'
+#' @export
+#'
 get_trading_volume <- function(df) {
   sanity(df)
 

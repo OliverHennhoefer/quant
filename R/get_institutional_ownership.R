@@ -26,6 +26,8 @@
 #' of others relative to the total shares outstanding.High institutional
 #' ownership can in many cases be interpreted as a signal of confidence.
 #'
+#' @export
+#'
 get_institutional_ownership <- function(df) {
 
   pfx <- 'inst.own'

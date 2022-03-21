@@ -24,6 +24,8 @@
 #' expectation that the stock is undervalued or its attempt to prevent a hostile
 #' takeover among other reasons.
 #'
+#' @export
+#'
 get_buyback_yield <- function(df) {
 
   pfx <- 'buyback_yield'

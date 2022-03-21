@@ -23,6 +23,8 @@
 #' The Price-Earnings Ratio calculated by the earnings divided by the market
 #' capitalization of a company.
 #'
+#' @export
+#'
 get_pe_ratio <- function(df) {
 
   pfx <- 'pe'

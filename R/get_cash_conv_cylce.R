@@ -30,6 +30,8 @@
 #' money. It is difficult to compare the Cash Conversion Cycle between
 #' different industries.
 #'
+#' @export
+#'
 get_cash_conv_cycle <- function(df) {
 
   pfx <- 'cash_conv_cycle'

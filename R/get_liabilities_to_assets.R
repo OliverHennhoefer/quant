@@ -24,6 +24,8 @@
 #' divided by total assets. The higher the ratio is, the more risk there is in
 #' the company.
 #'
+#' @export
+#'
 get_liabilities_to_assets <- function(df) {
 
   pfx <- 'liabilities2assets'

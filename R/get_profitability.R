@@ -28,6 +28,7 @@
 #' average, the Piotroski F-Score, the Consistency of the Profitability and the
 #' Predictability Rank (see get_predictability)
 #'
+#' @export
 #'
 get_profitability <- function(df) {
 

@@ -25,6 +25,8 @@
 #' indicates how effectively a company is using its assets in order to generate
 #' sales.
 #'
+#' @export
+#'
 get_operating_cash_flow <- function(df) {
 
   pfx <- 'ocf'

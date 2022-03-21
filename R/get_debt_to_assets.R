@@ -25,6 +25,8 @@
 #' highly leveraged. Lower ratios indicate that a company owns more asset than
 #' liabilities and can meet its obligations by selling assets if needed.
 #'
+#' @export
+#'
 get_debt_to_assets <- function(df) {
 
   pfx <- 'debt2asset'

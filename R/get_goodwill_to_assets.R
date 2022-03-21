@@ -25,6 +25,8 @@
 #' company's valuation. The ratio quantifies a company's brand value and other
 #' intangible aspects of its valuation.
 #'
+#' @export
+#'
 get_goodwill_to_assets <- function(df) {
 
   pfx <- 'goodwill2asset'

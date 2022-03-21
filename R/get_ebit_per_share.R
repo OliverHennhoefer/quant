@@ -23,6 +23,8 @@
 #' EBIT per Share is the amount of Earnings Before Interest and Taxes (EBIT) per
 #' outstanding share of the company's stock.
 #'
+#' @export
+#'
 get_ebit_per_share <- function(df) {
 
   pfx <- 'ebitps'

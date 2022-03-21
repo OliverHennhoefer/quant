@@ -30,6 +30,8 @@
 #' }
 #' Companies with a rank of 3 or less are likely to be in financial distress.
 #'
+#' @export
+#'
 get_financial_strength <- function(df) {
 
   pfx <- 'fin_strength'

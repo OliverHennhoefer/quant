@@ -24,6 +24,8 @@
 #' outstanding, simply shows the percentage of shares outstanding that trade
 #' freely.
 #'
+#' @export
+#'
 get_free_floate <- function(df) {
 
   pfx <- 'fptso'

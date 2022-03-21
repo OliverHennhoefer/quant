@@ -26,6 +26,8 @@
 #' It differs from the Cash-to-Debt-Ratio by focusing on current liabilities due
 #' in the short-term (< 1 year).
 #'
+#' @export
+#'
 get_cash_ratio <- function(df) {
 
   pfx <- 'cash.ratio'

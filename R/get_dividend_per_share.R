@@ -25,6 +25,8 @@
 #' a period of time, usually a year, by the number of outstanding ordinary
 #' shares issued.
 #'
+#' @export
+#'
 get_dividend_per_share <- function(df) {
 
   pfx <- 'divps'

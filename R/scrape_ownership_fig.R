@@ -20,7 +20,7 @@
 #'
 #' @return
 #' The input data frame supplemented by a company's respective key figure value
-#' of the last five fiscal years plus current years TTM.
+#' of the last five fiscal years plus current years TTM.#
 #'
 scrape_ownership_fig <- function(df, url, pfx, xpath_txt, xpath_tbl) {
 

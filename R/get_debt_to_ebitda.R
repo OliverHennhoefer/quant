@@ -27,6 +27,8 @@
 #' as red flags and indicate that the company may be financially distressed in
 #' the future.
 #'
+#' @export
+#'
 get_debt_to_ebitda <- function(df) {
 
   pfx <- 'debt2ebitda'

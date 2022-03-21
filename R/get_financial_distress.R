@@ -24,6 +24,8 @@
 #' The measure is obtained by a logit probability model based on eight
 #' explanatory variables.
 #'
+#' @export
+#'
 get_financial_distress <- function(df) {
 
   pfx <- 'fin.distress'

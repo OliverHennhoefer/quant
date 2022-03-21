@@ -24,6 +24,8 @@
 #' amortization ratio (EV/EBITDA) compares the value of a company—debt
 #' included—to the company's cash earnings less non-cash expenses.
 #'
+#' @export
+#'
 get_ev_to_ebitda <- function(df) {
 
   pfx <- 'ev2ebitda'

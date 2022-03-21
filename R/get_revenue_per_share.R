@@ -22,6 +22,8 @@
 #' The Asset-Turnover-Ratio measures the value of a company's *Revenue* relative
 #' to its market capitalization.
 #'
+#' @export
+#'
 get_revenue_per_share <- function(df) {
 
   pfx <- 'rev.ps'

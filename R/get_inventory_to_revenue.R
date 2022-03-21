@@ -24,6 +24,8 @@
 #' currently has on hand to support the current amount of revenue. The ratio
 #' indicated of a company to manage their inventory levels.
 #'
+#' @export
+#'
 get_inventory_to_revenue <- function(df) {
 
   pfx <- 'inventory2rev'

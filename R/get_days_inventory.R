@@ -23,6 +23,8 @@
 #' takes to turn its inventory, including goods that are work in progress,
 #' into sales.
 #'
+#' @export
+#'
 get_days_inventory <- function(df) {
 
   pfx <- 'days_inv'

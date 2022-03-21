@@ -23,6 +23,8 @@
 #' The Price-to-Free-Cash-Flow-Ratio measures a company's value relative to its
 #' Free Cash Flows.
 #'
+#' @export
+#'
 get_price_to_fcf <- function(df) {
 
   pfx <- 'pfcf'

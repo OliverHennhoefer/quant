@@ -26,6 +26,8 @@
 #' It differs from the Cash-Ratio by focusing on current as well as on
 #' non-current liabilities.
 #'
+#' @export
+#'
 get_cash_to_debt <- function(df) {
 
   pfx <- 'cash2debt'

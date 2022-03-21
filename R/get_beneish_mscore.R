@@ -64,6 +64,8 @@
 #' Beneish, Messod D. (1999): The Detection of Earnings Manipulation
 #' in Financial Analysts Journal, Volume 55, Issue 5, p. 24-36
 #'
+#' @export
+#'
 get_beneish_mscore <- function(df) {
 
   pfx <- 'mscore'

@@ -28,6 +28,8 @@
 #' Shiller P/E calculation. E10 is the average of the inflation adjusted
 #' earnings of a company over the past 10 years
 #'
+#' @export
+#'
 get_e10 <- function(df) {
 
   pfx <- 'e10'

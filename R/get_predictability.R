@@ -25,6 +25,8 @@
 #' study the correlation between the stock performances and the predictability
 #' of the business.
 #'
+#' @export
+#'
 get_predictability <- function(df) {
 
   url <- 'https://www.gurufocus.com/term/predictability_rank/'

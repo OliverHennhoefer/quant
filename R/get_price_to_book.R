@@ -22,6 +22,8 @@
 #' The Asset-Turnover-Ratio measures the market price of a company to its book
 #' value.
 #'
+#' @export
+#'
 get_price_to_book <- function(df) {
 
   pfx <- 'pb'

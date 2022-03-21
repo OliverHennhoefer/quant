@@ -23,6 +23,8 @@
 #' YoY EPS Growth is the percentage change of Earnings per Share (Diluted) over
 #' the past twelve months.
 #'
+#' @export
+#'
 get_yoy_eps_growth <- function(df) {
 
   pfx <- 'yoy_eps_gwth'

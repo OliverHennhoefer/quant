@@ -25,6 +25,8 @@
 #' indicate overvaluation of a stock, whereas as PEG Ratio <1 may indicate
 #' undervaluation.
 #'
+#' @export
+#'
 get_peg_ratio <- function(df) {
 
   pfx <- 'peg'

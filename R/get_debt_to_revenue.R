@@ -25,6 +25,8 @@
 #' mortgages, use it as a way to measure your ability to manage the payments you
 #' make each month and repay the money you have borrowed.
 #'
+#' @export
+#'
 get_debt_to_revenue <- function(df) {
 
   pfx <- 'debt2rev'

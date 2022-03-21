@@ -25,6 +25,8 @@
 #' capital-intensive companies (manufacturers, miner, ...) that own a high
 #' proportion of hard assets.
 #'
+#' @export
+#'
 get_price_to_tangible_book <- function(df) {
 
   pfx <- 'tangible_book'

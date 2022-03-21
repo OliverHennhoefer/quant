@@ -23,6 +23,8 @@
 #' Outstanding (EOP). Total debt is calculated as Long-Term Debt & Capital Lease
 #' Obligation plus Short-Term Debt & Capital Lease Obligation.
 #'
+#' @export
+#'
 get_total_debt_per_share <- function(df) {
 
   pfx <- 'tdps'

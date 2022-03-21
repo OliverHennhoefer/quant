@@ -27,6 +27,8 @@
 #' The forward rate of return can be thought of as the return that investors
 #' buying the stock today can expect from it in the future.
 #'
+#' @export
+#'
 get_yacktman_forward_return <- function(df) {
 
   pfx <- 'RateOfReturn'

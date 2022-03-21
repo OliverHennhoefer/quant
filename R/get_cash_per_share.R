@@ -22,6 +22,8 @@
 #' Cash-per-Share gives the cash, cash equivalents and marketable securities
 #' divided by the shares outstanding.
 #'
+#' @export
+#'
 get_cash_per_share <- function(df) {
 
   pfx <- 'cps'

@@ -26,6 +26,8 @@
 #' be interpreted as a signal of confidence. Larger companies have typically
 #' low(er) insider ownership.
 #'
+#' @export
+#'
 get_insider_ownership <- function(df) {
 
   pfx <- 'insider.own'

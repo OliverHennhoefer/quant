@@ -24,6 +24,8 @@
 #' Depreciation, and Amortization (EBITDA) per outstanding share of the
 #' company's stock.
 #'
+#' @export
+#'
 get_ebitda_per_share <- function(df) {
 
   pfx <- 'ebitdaps'

@@ -24,6 +24,8 @@
 #' Operating Income by its Interest Expense. Higher a coverage are naturally
 #' better for the financial stability of a company.
 #'
+#' @export
+#'
 get_interest_coverage <- function(df) {
 
   pfx <- 'interest_coverage'

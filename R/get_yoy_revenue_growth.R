@@ -23,6 +23,8 @@
 #' YoY Rev. per Sh. Growth is the percentage change of Revenue per Share over
 #' the past twelve months
 #'
+#' @export
+#'
 get_yoy_revenue_growth <- function(df) {
 
   pfx <- 'yoy_rps_gwth'

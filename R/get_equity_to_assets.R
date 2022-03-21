@@ -25,6 +25,8 @@
 #' determine the Equity-To-Asset ratio you divide the Net Worth by the Total
 #' Assets. This ratio is measured as a percentage.
 #'
+#' @export
+#'
 get_equity_to_assets <- function(df) {
 
   pfx <- 'equity2asset'
