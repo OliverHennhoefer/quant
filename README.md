@@ -11,7 +11,7 @@ This webscraping toolset provides functionalities for easily gathering stock dat
 ## Installation
 ```r
 # Github Download 'quant'-package (dev version)
-devtools::github_install('OliverHennhoefer/quant')
+devtools::install_github('OliverHennhoefer/quant')
 ```
 
 ## Application
