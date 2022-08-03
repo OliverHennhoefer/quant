@@ -77,7 +77,6 @@
 #' Model, Working Paper, Stern School of Business, New York University
 #'
 #' @export
-#'
 get_altman_z_score <- function(df) {
 
   pfx <- 'zscore'
