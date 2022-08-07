@@ -1,3 +1,14 @@
+#' @title Helper Function for Profitability
+#'
+#'  @usage scrape_profitability(df, url, xpath_txt)
+#'
+#' @param df data.frame
+#' @param url String
+#' @param xpath_txt String
+#'
+#' @return data.frame
+#' @export
+
 scrape_profitability <- function(df, url, xpath_txt) {
 
   sanity(df)
@@ -20,3 +31,4 @@ scrape_profitability <- function(df, url, xpath_txt) {
   return(df)
 
 }
+

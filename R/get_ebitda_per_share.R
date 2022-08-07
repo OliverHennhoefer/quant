@@ -1,8 +1,6 @@
-#' @title
-#' Get Earnings Before Interest, Tax and Depreciation Per Share
+#' @title Get Earnings Before Interest, Tax and Depreciation Per Share
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/EBITDA_per_share/AAPL/).
 #'
 #' @usage get_ebitda_per_share(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Get Earnings Before Interest, Tax and Depreciation Per Share** of the last
-#' five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Get Earnings Before Interest, Tax and Depreciation Per Share** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_ebitda_per_share(df)
 #'
@@ -23,9 +20,7 @@
 #' EBITDA per Share is the amount of Earnings Before Interest, Taxes,
 #' Depreciation, and Amortization (EBITDA) per outstanding share of the
 #' company's stock.
-#'
-#' @export
-#'
+
 get_ebitda_per_share <- function(df) {
 
   pfx <- 'ebitdaps'

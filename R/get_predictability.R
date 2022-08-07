@@ -1,8 +1,6 @@
-#' @title
-#' Get Predictability Rank
+#' @title Get Predictability Rank
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/predictability_rank/AAPL/).
 #'
 #' @usage get_predictability(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Predictability Rank**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Predictability Rank** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_predictability(df)
 #'
@@ -24,9 +22,7 @@
 #' depreciation and amortization) per share over the past ten fiscal years, and
 #' study the correlation between the stock performances and the predictability
 #' of the business.
-#'
-#' @export
-#'
+
 get_predictability <- function(df) {
 
   url <- 'https://www.gurufocus.com/term/predictability_rank/'

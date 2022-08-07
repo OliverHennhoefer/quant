@@ -1,8 +1,6 @@
-#' @title
-#' Get Insider Ownership
+#' @title Get Insider Ownership
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/InsiderOwnership/AAPL/).
 #'
 #' @usage get_insider_ownership(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Insider Ownership**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Insider Ownership** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_insider_ownership(df)
 #'
@@ -25,9 +23,7 @@
 #' before made available to the public. High insider ownership can in many cases
 #' be interpreted as a signal of confidence. Larger companies have typically
 #' low(er) insider ownership.
-#'
-#' @export
-#'
+
 get_insider_ownership <- function(df) {
 
   pfx <- 'insider.own'

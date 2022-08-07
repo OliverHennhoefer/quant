@@ -1,8 +1,6 @@
-#' @title
-#' Get Debt to Equity Ratio
+#' @title Get Debt to Equity Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/deb2equity/AAPL/).
 #'
 #' @usage get_debt_to_equity(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Debt to Equity Ratio** of the last five fiscal years plus current years
-#' TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Debt to Equity Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_debt_to_equity(df)
 #'
@@ -24,9 +21,7 @@
 #' shareholder equity and can be used to evaluate how much leverage a company is
 #' using. Higher-leverage ratios tend to indicate a company or stock with higher
 #' risk to shareholders.
-#'
-#' @export
-#'
+
 get_debt_to_equity <- function(df) {
 
   pfx <- 'deb2equity'

@@ -1,25 +1,20 @@
 #' @title
-#' Fetch complete stock list
+#' Fetch complete stock list of gurufocus.com
 #'
 #' @description
-#' Fetches the stock list provided by gurufocus.com
+#' Fetches the stock list provided by [gurufocus.com](gurufocus.com)
 #'
-#' @return
-#' data.table data.frame
-#'
-#' @example
-#' \donttest{stocks <- data_gurufocus()}
-#'
+#' @return data.table data.frame
 #' @export
-#'
+
 data_gurufocus <- function() {
 
-  # Prepare Progressbar --------------------------------------------------------
+  # Progress Bar ----------------------------------------------------------------
   total_records <- get_text(
     url = 'https://www.gurufocus.com/stock_list.php?&p=1&n=100',
     xpath = '//*[@id="ajax_content"]/div/div[3]/strong')
 
-  count <- round(as.numeric(total_records)/100, digits = -1) #divisibility
+  count <- round(as.numeric(total_records)/100, digits = -1) # divisibility
   pbar <- utils::txtProgressBar(0, count, style = 3)
 
   # Fetch Data -----------------------------------------------------------------
@@ -43,8 +38,10 @@ data_gurufocus <- function() {
 
     dat <- data.table::rbindlist(dat, html_dt)
   }
+
   close(pbar)
 
   data.table::setnames(dat, names)
+
   return(dat)
 }

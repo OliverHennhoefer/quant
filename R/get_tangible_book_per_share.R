@@ -1,15 +1,17 @@
-#' @title
-#' Get Tangible Book Value Per Share
+#' @title Get Tangible Book Value Per Share
 #'
-#' @description
-#' Fetching *Tangible Book Value Per Share* from gurufocus.com
+#' @description Fetching *Tangible Book Value Per Share* from gurufocus.com
 #'
 #' @usage get_tangible_book_per_share(df)
 #'
 #' @param df data.frame. Data.frame with column *symbol* containing at least one
 #' valid stock ticker symbol.
 #'
-#' @example
+#' @return Input data.frame supplemented by the company's available
+#' **Tangible Book Per Share** data.
+#' @export
+#'
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_tangible_book_per_share(df)
 #'
@@ -19,14 +21,7 @@
 #' potential value per share of a company in the event that it must liquidate
 #' it's assets.
 #' Assets such as property and equipment are considered tangible assets.
-#'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Tangible Book Per Share** of the last five fiscal years as well as current
-#' years TTM value.
-#'
-#' @export
-#'
+
 get_tangible_book_per_share <- function(df) {
 
   pfx <- 'tbvps'

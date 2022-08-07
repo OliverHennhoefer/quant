@@ -1,8 +1,6 @@
-#' @title
-#' Get Net Cash per Share
+#' @title Get Net Cash per Share
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/netcash/AAPL/).
 #'
 #' @usage get_net_cash_per_share(df)
@@ -10,20 +8,18 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Net Cash per Share**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Net Cash per Share** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_net_cash_per_share(df)
 #'
 #' @details
 #' Net Cash per Share is calculated by taking all a company's cash, less all
 #' current liabilities and dividing that number by the total shares outstanding.
-#'
-#' @export
-#'
+
 get_net_cash_per_share <- function(df) {
 
   pfx <- 'ncps'

@@ -1,3 +1,12 @@
+#' @title Helper Function for Predictability
+#'
+#' @param df data.frame
+#' @param url String
+#' @param xpath_txt String
+#'
+#' @return data.frame
+#' @export
+
 scrape_predictability<- function(df, url, xpath_txt) {
 
   sanity(df)

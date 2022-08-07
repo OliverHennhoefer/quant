@@ -1,8 +1,6 @@
-#' @title
-#' Get Operating Cash Flow per Share
+#' @title Get Operating Cash Flow per Share
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
 #' @usage get_operating_cash_flow(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Operating Cash Flow per Share** of the last five fiscal years plus current
-#' years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Operating Cash Flow per Share** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_operating_cash_flow(df)
 #'
@@ -24,9 +21,7 @@
 #' *Net Sales Revenue* relative to the value of its *Total Assets*. The ratio
 #' indicates how effectively a company is using its assets in order to generate
 #' sales.
-#'
-#' @export
-#'
+
 get_operating_cash_flow <- function(df) {
 
   pfx <- 'ocf'

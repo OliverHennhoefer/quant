@@ -1,8 +1,6 @@
-#' @title
-#' Get Price-to-Operating-Cash-Flow-Ratio
+#' @title Get Price-to-Operating-Cash-Flow-Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/pocf/AAPL/).
 #'
 #' @usage get_price_to_opcf(df)
@@ -10,21 +8,18 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Price-to-Operating-Cash-Flow-Ratio**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Price-to-Operating-Cash-Flow-Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_price_to_opcf(df)
 #'
 #' @details
 #' The Price-to-Operating-Cash-Flow-Ratio measures a company's value relative to
 #' its Operating Cash Flows.
-#'
-#' @export
-#'
+
 get_price_to_opcf <- function(df) {
 
   pfx <- 'pocf'

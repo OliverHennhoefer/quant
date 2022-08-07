@@ -1,8 +1,6 @@
-#' @title
-#' Effective Annual Interest Rate
+#' @title Effective Annual Interest Rate
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
 #' @usage get_eff_interest_rate(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Effective Annual Interest Rate** of the last five fiscal years plus current
-#' years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Effective Annual Interest Rate** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_eff_interest_rate(df)
 #'
@@ -24,9 +21,7 @@
 #' from the nominal interest rate and expressed as if compound interest was
 #' payable annually. It makes interest rates between loans with different
 #' compounding periods more comparable.
-#'
-#' @export
-#'
+
 get_eff_interest_rate <- function(df) {
 
   pfx <- 'EffectiveInterestRate'

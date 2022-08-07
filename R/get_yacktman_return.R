@@ -1,8 +1,6 @@
-#' @title
-#' Get Forward Rate of Return (Yacktman)
+#' @title Get Forward Rate of Return (Yacktman)
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/RateOfReturn/AAPL/).
 #'
 #' @usage get_yacktman_forward_return(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Forward Rate of Return (Yacktman)** of the last five fiscal years plus
-#' current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Forward Rate of Return (Yacktman)** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_yacktman_forward_return(df)
 #'
@@ -26,9 +23,7 @@
 #' normalized Free Cash Flow of the past seven years, and considers growth.
 #' The forward rate of return can be thought of as the return that investors
 #' buying the stock today can expect from it in the future.
-#'
-#' @export
-#'
+
 get_yacktman_forward_return <- function(df) {
 
   pfx <- 'RateOfReturn'

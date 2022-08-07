@@ -1,8 +1,6 @@
-#' @title
-#' Get Interest Coverage
+#' @title Get Interest Coverage
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
 #' @usage get_interest_coverage(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Interest Coverage**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Interest Coverage** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_interest_coverage(df)
 #'
@@ -23,9 +21,7 @@
 #' expenses on outstanding debt. It is calculated by diving a company's
 #' Operating Income by its Interest Expense. Higher a coverage are naturally
 #' better for the financial stability of a company.
-#'
-#' @export
-#'
+
 get_interest_coverage <- function(df) {
 
   pfx <- 'interest_coverage'

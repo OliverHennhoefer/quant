@@ -1,8 +1,6 @@
-#' @title
-#' Get Debt-to-Revenue Ratio
+#' @title Get Debt-to-Revenue Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/debt2rev/AAPL/).
 #'
 #' @usage get_debt_to_revenue(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Debt to Revenue Ratio** of the last five fiscal years plus current years
-#' TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Debt to Revenue Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_debt_to_revenue(df)
 #'
@@ -24,9 +21,7 @@
 #' amount of debt you have to your overall income. Lenders, including issuers of
 #' mortgages, use it as a way to measure your ability to manage the payments you
 #' make each month and repay the money you have borrowed.
-#'
-#' @export
-#'
+
 get_debt_to_revenue <- function(df) {
 
   pfx <- 'debt2rev'

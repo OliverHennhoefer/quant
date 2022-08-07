@@ -1,8 +1,6 @@
-#' @title
-#' Get Days Inventory
+#' @title Get Days Inventory
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/DaysInventory/AAPL/).
 #'
 #' @usage get_days_inventory(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Days Inventory**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Days Inventory** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_days_inventory(df)
 #'
@@ -22,9 +20,7 @@
 #' The Asset-Turnover-Ratio indicates the average time in day that a company
 #' takes to turn its inventory, including goods that are work in progress,
 #' into sales.
-#'
-#' @export
-#'
+
 get_days_inventory <- function(df) {
 
   pfx <- 'days_inv'

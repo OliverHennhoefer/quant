@@ -1,8 +1,6 @@
-#' @title
-#' Get Probability of Financial Distress
+#' @title Get Probability of Financial Distress
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/PFD/AAPL/).
 #'
 #' @usage get_financial_distress(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's current
-#' **Probability of Financial Distress**.
+#' @return Input data.frame supplemented by the company's available
+#' **Probability of Financial Distress** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_financial_distress(df)
 #'
@@ -23,9 +21,7 @@
 #' will go bankrupt in the upcoming year given its current financial position.
 #' The measure is obtained by a logit probability model based on eight
 #' explanatory variables.
-#'
-#' @export
-#'
+
 get_financial_distress <- function(df) {
 
   pfx <- 'fin.distress'

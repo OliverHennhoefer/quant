@@ -1,8 +1,6 @@
-#' @title
-#' Get Cash-Debt-Ratio
+#' @title Get Cash-Debt-Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
 #' @usage get_cash_to_debt(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Cash-Debt-Ratio**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Cash-Debt-Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_cash_to_debt(df)
 #'
@@ -25,9 +23,7 @@
 #'
 #' It differs from the Cash-Ratio by focusing on current as well as on
 #' non-current liabilities.
-#'
-#' @export
-#'
+
 get_cash_to_debt <- function(df) {
 
   pfx <- 'cash2debt'

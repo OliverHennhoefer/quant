@@ -1,8 +1,6 @@
-#' @title
-#' Get Profitability Rank
+#' @title Get Profitability Rank
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/rank_profitability/AAPL/).
 #'
 #' @usage get_profitability(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Profitability Rank**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Profitability Rank** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_profitability(df)
 #'
@@ -27,9 +25,7 @@
 #' The Profitability Rank is based on the Operating Margin and its 5-year
 #' average, the Piotroski F-Score, the Consistency of the Profitability and the
 #' Predictability Rank (see get_predictability)
-#'
-#' @export
-#'
+
 get_profitability <- function(df) {
 
   url <- 'https://www.gurufocus.com/term/rank_profitability/'

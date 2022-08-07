@@ -1,8 +1,6 @@
-#' @title
-#' Get Float Percentage of Total Shares Outstanding
+#' @title Get Float Percentage of Total Shares Outstanding
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/FloatPercentageOfTSO/AAPL/).
 #'
 #' @usage get_free_floate(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Float Percentage of Total Shares Outstanding** of the last five fiscal
-#' years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Float Percentage of Total Shares Outstanding** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_free_floate(df)
 #'
@@ -23,9 +20,7 @@
 #' The free float percentage, also known as float percentage of total shares
 #' outstanding, simply shows the percentage of shares outstanding that trade
 #' freely.
-#'
-#' @export
-#'
+
 get_free_floate <- function(df) {
 
   pfx <- 'fptso'

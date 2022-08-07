@@ -1,8 +1,6 @@
-#' @title
-#' Get Price-Earnings Ratio
+#' @title Get Price-Earnings Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/pe/AAPL/).
 #'
 #' @usage get_pe_ratio(df)
@@ -10,21 +8,18 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Price Earnings Ratio without Non-Recurring Items** of the last five fiscal
-#' years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Price Earnings Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_pe_ratio(df)
 #'
 #' @details
 #' The Price-Earnings Ratio calculated by the earnings divided by the market
 #' capitalization of a company.
-#'
-#' @export
-#'
+
 get_pe_ratio <- function(df) {
 
   pfx <- 'pe'

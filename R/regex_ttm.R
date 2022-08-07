@@ -10,7 +10,8 @@
 #' @return
 #' The input data frame supplemented by the company's respective key figures
 #' of the last five fiscal years plus current years TTM.
-#'
+#' @export
+
 regex_ttm <- function(string) {
 
   # Remove Paranthesis ---------------------------------------------------------

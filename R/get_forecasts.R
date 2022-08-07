@@ -17,11 +17,11 @@ get_forecasts <- function(df) {
     # (example: OTCPK:BAYRY)
     html_page <- tryCatch({
       rvest::read_html(src_url)
-      }, error = function(e) {
-        print(paste0("No data for ", ticker))
-        data.frame("symbol" = ticker, "rating" = NA, "upside" = NA,
-                   "buy" = NA, "hold" = NA, "sell" = NA, "totals" = NA)
-      }
+    }, error = function(e) {
+      print(paste0("No data for ", ticker))
+      data.frame("symbol" = ticker, "rating" = NA, "upside" = NA,
+                 "buy" = NA, "hold" = NA, "sell" = NA, "totals" = NA)
+    }
     )
 
     if (is.data.frame(html_page)){
@@ -39,7 +39,7 @@ get_forecasts <- function(df) {
     # generally missing page information. (example: RTTO)
     if (length(buy) == 0) {
       table <- data.frame("symbol" = ticker, "rating" = NA, "upside" = NA,
-                 "buy" = NA, "hold" = NA, "sell" = NA, "totals" = NA)
+                          "buy" = NA, "hold" = NA, "sell" = NA, "totals" = NA)
       cdf <- plyr::rbind.fill(cdf, table)
       next
     }

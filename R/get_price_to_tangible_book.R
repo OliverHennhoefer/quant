@@ -1,8 +1,6 @@
-#' @title
-#' Get Price-Tangible-Book-Ratio
+#' @title Get Price-Tangible-Book-Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/p2tangible_book/AAPL/).
 #'
 #' @usage get_price_to_tangible_book(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Price-Tangible-Book-Ratio** of the last five fiscal years plus current
-#' years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Price-Tangible-Book-Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_price_to_tangible_book(df)
 #'
@@ -24,9 +21,7 @@
 #' tangible assets. This ratio is applicable mainly to industrial or other
 #' capital-intensive companies (manufacturers, miner, ...) that own a high
 #' proportion of hard assets.
-#'
-#' @export
-#'
+
 get_price_to_tangible_book <- function(df) {
 
   pfx <- 'tangible_book'

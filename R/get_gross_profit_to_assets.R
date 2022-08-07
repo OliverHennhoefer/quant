@@ -1,8 +1,6 @@
-#' @title
-#' Get Gross Profit to Asset Ratio
+#' @title Get Gross Profit to Asset Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
 #' @usage get_gross_profit_to_assets(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Gross Profit to Asset Ratio** of the last five fiscal years plus current
-#' years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Gross Profit to Asset Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_gross_profit_to_assets(df)
 #'
@@ -23,9 +20,7 @@
 #' The Asset-Turnover-Ratio is calculated as Gross Profits divided by the firm's
 #' Total Assets. The ratio determined how efficiently a firm uses its assets to
 #' generate gross profits.
-#'
-#' @export
-#'
+
 get_gross_profit_to_assets <- function(df) {
 
   pfx <- 'grossprofit2asset'

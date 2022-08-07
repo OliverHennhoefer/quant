@@ -1,8 +1,6 @@
-#' @title
-#' Get Earnings Before Interest and Taxes per Share
+#' @title Get Earnings Before Interest and Taxes per Share
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/EBIT_per_share/AAPL/).
 #'
 #' @usage get_ebit_per_share(df)
@@ -10,21 +8,18 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Earnings Before Interest and Taxes per Share** of the last five fiscal
-#' years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Earnings Before Interest and Taxes per Share** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_ebit_per_share(df)
 #'
 #' @details
 #' EBIT per Share is the amount of Earnings Before Interest and Taxes (EBIT) per
 #' outstanding share of the company's stock.
-#'
-#' @export
-#'
+
 get_ebit_per_share <- function(df) {
 
   pfx <- 'ebitps'

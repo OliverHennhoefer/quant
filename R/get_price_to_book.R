@@ -1,8 +1,6 @@
-#' @title
-#' Get Price to Book Ratio
+#' @title Get Price to Book Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/pb/AAPL/).
 #'
 #' @usage get_price_to_book(df)
@@ -10,20 +8,18 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Price to Book Ratio**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Price to Book Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_price_to_book(df)
 #'
 #' @details
 #' The Asset-Turnover-Ratio measures the market price of a company to its book
 #' value.
-#'
-#' @export
-#'
+
 get_price_to_book <- function(df) {
 
   pfx <- 'pb'

@@ -1,8 +1,6 @@
-#' @title
-#' Get Net-Net Working Capital
+#' @title Get Net-Net Working Capital
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/NCAV/AAPL/).
 #'
 #' @usage get_net_net_working_capital(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Net-Net Working Capital** of the last five fiscal years plus current years
-#' TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Net-Net Working Capital** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_net_net_working_capital(df)
 #'
@@ -28,9 +25,7 @@
 #' value is calculated by deducting total liabilities from the adjusted current
 #' assets. Since the measure does not consider long-term assets or liabilities,
 #' it is unreliable for long-term investments.
-#'
-#' @export
-#'
+
 get_net_net_working_capital <- function(df) {
 
   pfx <- 'nnwc'

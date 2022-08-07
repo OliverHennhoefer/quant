@@ -1,8 +1,6 @@
-#' @title
-#' Get Price-to-Free-Cash-Flow-Ratio
+#' @title Get Price-to-Free-Cash-Flow-Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/pfcf/AAPL/).
 #'
 #' @usage get_price_to_fcf(df)
@@ -10,21 +8,18 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Price-to-Free-Cash-Flow-Ratio** of the last five fiscal years plus current
-#' years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Price-to-Free-Cash-Flow-Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_price_to_fcf(df)
 #'
 #' @details
 #' The Price-to-Free-Cash-Flow-Ratio measures a company's value relative to its
 #' Free Cash Flows.
-#'
-#' @export
-#'
+
 get_price_to_fcf <- function(df) {
 
   pfx <- 'pfcf'

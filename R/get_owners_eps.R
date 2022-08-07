@@ -1,8 +1,6 @@
-#' @title
-#' Get Owners Earnings per Share
+#' @title Get Owners Earnings per Share
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/Owner_Earnings/AAPL/).
 #'
 #' @usage get_owners_eps(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Owners Earnings per Share** of the last five fiscal years plus current
-#' years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Owners Earnings per Share** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_owners_eps(df)
 #'
@@ -33,9 +30,7 @@
 #' be included in (c). However, businesses following the LIFO inventory method
 #' usually do not require additional working capital if unit volume does not
 #' change.)"
-#'
-#' @export
-#'
+
 get_owners_eps <- function(df) {
 
   pfx <- 'owners.eps'

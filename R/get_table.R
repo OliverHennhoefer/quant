@@ -10,12 +10,14 @@
 #' @param raw Logical. Controls whether 'gurufocus.com'-specific data processing
 #' shall be applied to the table.
 #'
-#' @example
-#' get_table(url = 'https://www.gurufocus.com/term/cash_per_share/AAPL/',
+#' @examples
+#' get_table(name = 'test',
+#'          url = 'https://www.gurufocus.com/term/cash_per_share/AAPL/',
 #'          xpath = '//*[@id="target_def_historical_data"]/div[2]/div/table')
 #'
 #' @return The table to be found under the given XML path and URL.
-#'
+#' @export
+
 get_table <- function(url, xpath, name, raw = FALSE) {
 
   # Scrape annual data table ---------------------------------------------------
@@ -32,9 +34,9 @@ get_table <- function(url, xpath, name, raw = FALSE) {
   dat_tbl <- html_dt[-1, ] # Remove header
 
   colnames(dat_tbl) <- paste0(name,
-                            substr(dat_tbl[1, ],
-                            nchar(dat_tbl[1, ]) - 1,
-                            nchar(dat_tbl[1, ]))) # Add column name prefix
+                              substr(dat_tbl[1, ],
+                                     nchar(dat_tbl[1, ]) - 1,
+                                     nchar(dat_tbl[1, ]))) # Add column name prefix
 
   dat_tbl[dat_tbl == "-" | dat_tbl == ""] <- NA
 

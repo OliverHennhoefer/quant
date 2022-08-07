@@ -1,3 +1,14 @@
+#' @title Merge original data frame with scraped data
+#'
+#' Internal function. Merges data.frame resulting from web scraping to the
+#' data.frame provided as input of a respective function.
+#'
+#' @param table Data.frame
+#'
+#' @examples
+#' df <- data.frame("symbol" = "STOCK", "eps_2016" = 99)
+#' topicality(df)
+#' @export
 topicality <- function(table) {
 
   # Check whether available data is outdated -----------------------------------

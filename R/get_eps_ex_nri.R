@@ -1,8 +1,6 @@
-#' @title
-#' Get Earnings per Share without Non-recurrent Items
+#' @title Get Earnings per Share without Non-recurrent Items
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/eps_nri/AAPL/).
 #'
 #' @usage get_eps_ex_nri(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Earnings per Share ex Non-recurrent Items** of the last five fiscal years
-#' plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Earnings per Share ex Non-recurrent Items** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_eps_ex_nri(df)
 #'
@@ -24,9 +21,7 @@
 #' subtracting non-recurring items, the dividends of preferred stocks and
 #' non-operating income from the total net income. With that the measure gives
 #' a better impression about the real earnings power of a company.
-#'
-#' @export
-#'
+
 get_eps_ex_nri <- function(df) {
 
   pfx <- 'epsnri'

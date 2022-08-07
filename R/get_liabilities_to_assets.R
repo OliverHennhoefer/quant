@@ -1,8 +1,6 @@
-#' @title
-#' Get Liabilities to Assets Ratio
+#' @title Get Liabilities to Assets Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
 #' @usage get_liabilities_to_assets(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Altman Z-score**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Liabilities-to-Assets-Ratiop** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_liabilities_to_assets(df)
 #'
@@ -23,9 +21,7 @@
 #' the company's assets are made of liabilities, calculated as total liabilities
 #' divided by total assets. The higher the ratio is, the more risk there is in
 #' the company.
-#'
-#' @export
-#'
+
 get_liabilities_to_assets <- function(df) {
 
   pfx <- 'liabilities2assets'

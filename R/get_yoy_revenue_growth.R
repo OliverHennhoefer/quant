@@ -1,8 +1,6 @@
-#' @title
-#' Get Year-over-Year Revenue Per Share Growth
+#' @title Get Year-over-Year Revenue Per Share Growth
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/growth_per_share_rev/AAPL/).
 #'
 #' @usage get_yoy_revenue_growth(df)
@@ -10,21 +8,18 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Year-over-Year Revenue Per Share Growth** of the last five fiscal years
-#' plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Year-over-Year Revenue Per Share Growth** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_yoy_revenue_growth(df)
 #'
 #' @details
 #' YoY Rev. per Sh. Growth is the percentage change of Revenue per Share over
 #' the past twelve months
-#'
-#' @export
-#'
+
 get_yoy_revenue_growth <- function(df) {
 
   pfx <- 'yoy_rps_gwth'

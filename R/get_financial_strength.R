@@ -1,8 +1,6 @@
-#' @title
-#' Get Financial Strength Rank
+#' @title Get Financial Strength Rank
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/rank_balancesheet/AAPL/).
 #'
 #' @usage get_financial_strength(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's current years
-#' **Financial Strength Rank**.
+#' @return Input data.frame supplemented by the company's available
+#' **Financial Strength Rank** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_financial_strength(df)
 #'
@@ -29,9 +27,7 @@
 #'   \item Altman Z-score
 #' }
 #' Companies with a rank of 3 or less are likely to be in financial distress.
-#'
-#' @export
-#'
+
 get_financial_strength <- function(df) {
 
   pfx <- 'fin_strength'

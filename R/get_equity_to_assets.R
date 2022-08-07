@@ -1,8 +1,6 @@
-#' @title
-#' Get Equity-to-Total-Assets Ratio
+#' @title Get Equity-to-Total-Assets Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/equity2asset/AAPL/).
 #'
 #' @usage get_equity_to_assets(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Equity-to-Total-Assets Ratio** of the last five fiscal years plus current
-#' years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Equity-to-Total-Assets Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_equity_to_assets(df)
 #'
@@ -24,9 +21,7 @@
 #' has when compared to the total assets owned by the business or farm. To
 #' determine the Equity-To-Asset ratio you divide the Net Worth by the Total
 #' Assets. This ratio is measured as a percentage.
-#'
-#' @export
-#'
+
 get_equity_to_assets <- function(df) {
 
   pfx <- 'equity2asset'

@@ -7,10 +7,12 @@
 #'
 #' @param input Data.frame. A data.frame provided as original function input.
 #'
-#' @example
+#' @examples
 #' df <- data.frame("symbol" = "STOCK", "eps_2016" = 99)
 #' input <- data.frame("symbol" = "STOCK", "eps_2016" = 99, "eps_2017" = 199)
 #' input_merge(df = df, input = input)
+#' @export
+
 input_merge <- function(df = NULL, input = NULL) {
 
   # Convert columns to integer -------------------------------------------------

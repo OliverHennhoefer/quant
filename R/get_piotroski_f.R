@@ -1,29 +1,31 @@
-#' @title Get Year-over-Year Earnings per Share Growth
+#' @title Get Piotroski F-Score
 #'
 #' @description Wrapper function for fetching data from
-#' [gurufocus.com](https://www.gurufocus.com/term/growth_per_share_eps/AAPL/).
+#' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
-#' @usage get_yoy_eps_growth(df)
+#' @usage get_piotroski_f(df)
 #'
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
 #' @return Input data.frame supplemented by the company's available
-#' **Year-over-Year Earnings per Share Growth** data.
+#' **Piotroski F-Score** data.
 #' @export
 #'
 #' @examples
 #' df <- data.frame('symbol' = 'AAPL')
-#' res <- get_yoy_eps_growth(df)
+#' res <- get_piotroski_f(df)
 #'
 #' @details
-#' YoY EPS Growth is the percentage change of Earnings per Share (Diluted) over
-#' the past twelve months.
+#' The Asset-Turnover-Ratio measures the value of a company's
+#' *Net Sales Revenue* relative to the value of its *Total Assets*. The ratio
+#' indicates how effectively a company is using its assets in order to generate
+#' sales.
 
-get_yoy_eps_growth <- function(df) {
+get_piotroski_f <- function(df) {
 
-  pfx <- 'yoy_eps_gwth'
-  url <- 'https://www.gurufocus.com/term/growth_per_share_eps/'
+  pfx <- 'fscore'
+  url <- 'https://www.gurufocus.com/term/fscore/'
   xpath_tbl <- '//*[@id="target_def_historical_data"]/div[2]/div/table'
   xpath_txt <- '//*[@id="def_body_detail_height"]/font[1]'
 

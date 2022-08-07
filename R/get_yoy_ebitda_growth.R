@@ -1,5 +1,5 @@
-#' @title
-#' Get Year-over-Year Earnings before Interest, Tax and Appreciation Growth-Rate
+#' @title Get Year-over-Year Earnings before Interest, Tax and
+#' Appreciation Growth-Rate
 #'
 #' @description
 #' Fetching
@@ -11,20 +11,18 @@
 #' @param df data.frame. Data.frame with column *symbol* containing at least one
 #' valid ticker symbol of a listed stock.
 #'
-#' @example
+#' @return Input data.frame supplemented by the company's available
+#' **Year-over-Year Earnings before Interest, Tax and Appreciation Growth**
+#' data.
+#' @export
+#'
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_yoy_ebitda_growth(df)
 #'
 #' @details
 #' *YoY EBITDA Growth* is the percentage change of EBITDA per share.
-#'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Year-over-Year Earnings before Interest, Tax and Appreciation Growth** of
-#' the last five fiscal years as well as current years TTM value.
-#'
-#' @export
-#'
+
 get_yoy_ebitda_growth <- function(df) {
 
   pfx <- 'yoy_ebitda_gwth'

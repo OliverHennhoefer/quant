@@ -7,10 +7,7 @@
 #' @param df Data.frame. A data.frame to be checked for sanity.
 #'
 #' @return A `"data.table" "data.frame"` object.
-#'
-#' @example
-#' sanity(data.frame("symbol" = c("AAPL", "MSFT", "BABA")))
-#'
+
 sanity <- function(df) {
 
   message <- "Column 'symbol' containing valid stock tickers required!"

@@ -1,8 +1,6 @@
-#' @title
-#' Get CAPEX-Sales-Ratio
+#' @title Get CAPEX-Sales-Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/capex_to_revenue/AAPL/).
 #'
 #' @usage get_capex_to_sales(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **CAPEX-Sales-Ratio**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **CAPEX-Sales-Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_capex_to_sales(df)
 #'
@@ -24,9 +22,7 @@
 #' measure indicates how aggressively a company is reinvesting its revenue into
 #' productive assets. The interpretation of the ratio depends on how effectively
 #' a company uses its assets to produce new income.
-#'
-#' @export
-#'
+
 get_capex_to_sales <- function(df) {
 
   pfx <- 'capex2rev'

@@ -1,8 +1,6 @@
-#' @title
-#' Get Current Ratio
+#' @title Get Current Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/current_ratio/AAPL/).
 #'
 #' @usage get_current_ratio(df)
@@ -10,19 +8,17 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Current Ratio**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Current Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_current_ratio(df)
 #'
 #' @details
 #' The Current Ratio measures a company's ability to its shot-term obligations.
-#'
-#' @export
-#'
+
 get_current_ratio <- function(df) {
 
   pfx <- 'current_ratio'

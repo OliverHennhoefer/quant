@@ -1,8 +1,6 @@
-#' @title
-#' Get Enterprise-Value-to-Revenue Ratio
+#' @title Get Enterprise-Value-to-Revenue Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/ev2rev/AAPL/).
 #'
 #' @usage get_ev_to_revenue(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Enterprise-Value-to-Revenue Ratio** of the last five fiscal years plus
-#' current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Enterprise-Value-to-Revenue Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_ev_to_revenue(df)
 #'
@@ -23,9 +20,7 @@
 #' The Enterprise-Value-to-Revenue Ratio is calculated as the company's
 #' enterprise value relative to its revenue. Often used to value a company
 #' that does not generate income/profits yet.
-#'
-#' @export
-#'
+
 get_ev_to_revenue <- function(df) {
 
   pfx <- 'ev2rev'

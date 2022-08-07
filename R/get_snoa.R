@@ -1,8 +1,6 @@
-#' @title
-#' Get Scaled Net Operating Assets
+#' @title Get Scaled Net Operating Assets
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/SNOA/AAPL/).
 #'
 #' @usage get_snoa(df)
@@ -10,21 +8,18 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Scaled Net Operating Assets** of the last five fiscal years plus current
-#' years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Scaled Net Operating Assets** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_snoa(df)
 #'
 #' @details
 #' Scaled Net Operating Assets (SNOA) is calculated as the difference between
 #' operating assets and operating liabilities, scaled by lagged total assets.
-#'
-#' @export
-#'
+
 get_snoa <- function(df) {
 
   pfx <- 'snoa'

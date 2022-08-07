@@ -1,8 +1,6 @@
-#' @title
-#' Get Debt to Asset Ratio
+#' @title Get Debt to Asset Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
 #' @usage get_debt_to_assets(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Debt to Asset Ratio**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Debt to Asset Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_debt_to_assets(df)
 #'
@@ -24,9 +22,7 @@
 #' owns the same amount of liabilities or more as its assets and with that is
 #' highly leveraged. Lower ratios indicate that a company owns more asset than
 #' liabilities and can meet its obligations by selling assets if needed.
-#'
-#' @export
-#'
+
 get_debt_to_assets <- function(df) {
 
   pfx <- 'debt2asset'

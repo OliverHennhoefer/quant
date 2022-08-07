@@ -1,8 +1,6 @@
-#' @title
-#' Get Price-Earnings-Growth Ratio
+#' @title Get Price-Earnings-Growth Ratio
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/turnover/AAPL/).
 #'
 #' @usage get_peg_ratio(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Price-Earnings-Growth Ratio** of the last five fiscal years plus current
-#' years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Price-Earnings-Growth Ratio** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_peg_ratio(df)
 #'
@@ -24,9 +21,7 @@
 #' (without NRI) divided by the 5-Year EBITDA growth rate. A PEG Ratio >1 may
 #' indicate overvaluation of a stock, whereas as PEG Ratio <1 may indicate
 #' undervaluation.
-#'
-#' @export
-#'
+
 get_peg_ratio <- function(df) {
 
   pfx <- 'peg'

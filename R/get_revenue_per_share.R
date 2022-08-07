@@ -1,8 +1,6 @@
-#' @title
-#' Get Revenue per Share
+#' @title Get Revenue per Share
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/per+share+rev/AAPL/).
 #'
 #' @usage get_revenue_per_share(df)
@@ -10,20 +8,18 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **Revenue per Share**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Revenue per Share** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_revenue_per_share(df)
 #'
 #' @details
 #' The Asset-Turnover-Ratio measures the value of a company's *Revenue* relative
 #' to its market capitalization.
-#'
-#' @export
-#'
+
 get_revenue_per_share <- function(df) {
 
   pfx <- 'rev.ps'

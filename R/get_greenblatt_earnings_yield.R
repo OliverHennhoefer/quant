@@ -1,15 +1,18 @@
-#' @title
-#' Get Earnings Yield (Formula by Joel Greenblatt)
+#' @title Get Earnings Yield (Formula by Joel Greenblatt)
 #'
-#' @description
-#' Fetching *Earnings Yield (Formula by Joel Greenblatt)* from gurufocus.com.
+#' @description Fetching *Earnings Yield (Formula by Joel Greenblatt)*
+#' from gurufocus.com.
 #'
 #' @usage get_greenblatt_earnings_yield(df)
 #'
 #' @param df data.frame. Data frame with column *symbol* containing at least one
 #' valid stock ticker symbol.
 #'
-#' @example
+#' @return Input data.frame supplemented by the company's available
+#' **Earnings Yield (Joel Greenblatt)** data.
+#' @export
+#'
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_greenblatt_earnings_yield(df)
 #'
@@ -19,14 +22,7 @@
 #' It only looks at one-year's business operation. For cyclical companies, the
 #' earnings yield is usually highest at the peak of the business cycle, although
 #' these earnings are rarely sustainable.
-#'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Earnings Yield (Joel Greenblatt)** of the last five fiscal years as well as
-#' it's current years TTM value.
-#'
-#' @export
-#'
+
 get_greenblatt_earnings_yield <- function(df) {
 
   pfx <- 'earning_yield_greenblatt'

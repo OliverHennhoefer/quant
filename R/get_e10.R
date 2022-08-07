@@ -1,8 +1,6 @@
-#' @title
-#' Get E10
+#' @title Get E10
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/e10/AAPL/).
 #'
 #' @usage get_e10(df)
@@ -10,11 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's **E10**
-#' of the last five fiscal years plus current years TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **E10** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_e10(df)
 #'
@@ -27,9 +25,7 @@
 #' E10 is a concept invented by Prof. Robert Shiller, who uses E10 for his
 #' Shiller P/E calculation. E10 is the average of the inflation adjusted
 #' earnings of a company over the past 10 years
-#'
-#' @export
-#'
+
 get_e10 <- function(df) {
 
   pfx <- 'e10'

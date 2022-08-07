@@ -1,8 +1,6 @@
-#' @title
-#' Get Days Sales Outstanding
+#' @title Get Days Sales Outstanding
 #'
-#' @description
-#' Wrapper function for fetching data from
+#' @description Wrapper function for fetching data from
 #' [gurufocus.com](https://www.gurufocus.com/term/DaysSalesOutstanding/AAPL/).
 #'
 #' @usage get_days_sales_outstanding(df)
@@ -10,12 +8,11 @@
 #' @param df data.frame. Data frame with column 'symbol' containing at least one
 #' valid stock ticker symbol.
 #'
-#' @return
-#' The original data.frame supplemented by the company's
-#' **Days Sales Outstanding** of the last five fiscal years plus current years
-#' TTM.
+#' @return Input data.frame supplemented by the company's available
+#' **Days Sales Outstanding** data.
+#' @export
 #'
-#' @example
+#' @examples
 #' df <- data.frame('symbol' = 'AAPL')
 #' res <- get_days_sales_outstanding(df)
 #'
@@ -24,9 +21,7 @@
 #' to receive payment for a sale. A higher Days Sales Outstanding indicates the
 #' company is getting its payments quickly. Generally DSO <45 days is considered
 #' low.
-#'
-#' @export
-#'
+
 get_days_sales_outstanding <- function(df) {
 
   pfx <- 'DaysSalesOutstanding'
