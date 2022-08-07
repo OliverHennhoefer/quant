@@ -1,10 +1,10 @@
 Package: quant
-Title: Provides Functions for Conveniently Accessing Quantitative Stock Data Offered by Gurufocus.com
-Version: 0.0.0.9000
+Title: Fundamentals Data for Stock Research
+Version: 1.0.0.1000
 Authors@R: 
-    person("Oliver", "Hennhoefer", , "oliver.hennhoefer@mail.de", role = c("aut", "cre"),
+    person("Oliver", "Hennhöfer", , "oliver.hennhoefer@mail.de", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9834-4685"))
-Description: Provides functions for fetching operating data, fundamentals, valuation ratios etc. for thousands of publicly traded companies from gurufocus.com.
+Description: Provides commands for easy retrieval of fundamental stock data from gurufocus.com and tipranks.com for thousands of publicly traded companies.
 URL: https://github.com/OliverHennhoefer/quant
 Language: en-US
 Imports:
@@ -12,7 +12,7 @@ Imports:
 	data.table,
 	rvest,
 	utils
-License: MIT + file LICENSE
+License: use_mit_license()
 Encoding: UTF-8
 BugReports: https://github.com
 Roxygen: list(markdown = TRUE)
