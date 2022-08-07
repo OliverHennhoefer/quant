@@ -1,6 +1,6 @@
 Package: quant
 Title: Fundamentals Data for Stock Research
-Version: 1.0.0.1000
+Version: 0.0.1.0000
 Authors@R: 
     person("Oliver", "Hennhöfer", , "oliver.hennhoefer@mail.de", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-9834-4685"))
@@ -12,7 +12,7 @@ Imports:
 	data.table,
 	rvest,
 	utils
-License: use_mit_license()
+License: GPL-3
 Encoding: UTF-8
 BugReports: https://github.com
 Roxygen: list(markdown = TRUE)
