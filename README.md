@@ -8,6 +8,8 @@ This webscraping toolset provides functionalities for easily gathering stock dat
 📅 Data for the company's last five fiscal years and current years TTM value. <br>
 ♻️ Convenient merging-abilities for updating past scraping results. <br>
 
+![](msc/quant_demo.gif) <br>
+
 ## Prerequisite
 
 Note that the installation of 'quant' requires [RTools](https://cran.r-project.org/bin/windows/Rtools/) in order to build R and R packages from source on Windows.
