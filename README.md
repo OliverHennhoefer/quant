@@ -51,6 +51,6 @@ df %>%
   3 MSFT   Technology         Software          0.03          10
 ```
 ## Data Providers
-[gurufocus.com](gurufocus.com)
-[tipranks.com](tipranks.com)
+[gurufocus.com](gurufocus.com) <br>
+[tipranks.com](tipranks.com) <br>
 [wikipedia.com](wikipedia.com)
