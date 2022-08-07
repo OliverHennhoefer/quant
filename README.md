@@ -8,7 +8,7 @@ This webscraping toolset provides functionalities for easily gathering stock dat
 📅 Data for the company's last five fiscal years and current years TTM value. <br>
 ♻️ Convenient merging-abilities for updating past scraping results. <br>
 
-![](msc/quant_demo.gif) <br>
+![](misc/quant_demo.gif) <br>
 
 ## Prerequisite
 
