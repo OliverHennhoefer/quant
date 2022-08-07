@@ -50,3 +50,7 @@ df %>%
   2 BABA   Consumer Cyclical  Retail - Cyclical 0.29          9                                 
   3 MSFT   Technology         Software          0.03          10
 ```
+## Data Providers
+[gurufocus.com](gurufocus.com)
+[tipranks.com](tipranks.com)
+[wikipedia.com](wikipedia.com)
