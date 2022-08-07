@@ -10,7 +10,7 @@ This webscraping toolset provides functionalities for easily gathering stock dat
 
 ## Prerequisite
 
-Note that the installation if 'quant' requires [RTools](https://cran.r-project.org/bin/windows/Rtools/) in order to build R and R packages from source on Windows.
+Note that the installation of 'quant' requires [RTools](https://cran.r-project.org/bin/windows/Rtools/) in order to build R and R packages from source on Windows.
 
 ## Installation
 ```r
