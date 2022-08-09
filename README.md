@@ -5,6 +5,7 @@ The project relies on data provided by [gurufocus.com](https://www.gurufocus.com
 This webscraping toolset provides functionalities for easily gathering stock data for up to the last five fiscal years. <br>
 
 📚 Extensive data for 6.000+ unique listings. <br>
+:memo: More than 50 different metrics.
 📅 Data for the company's last five fiscal years and current years TTM value. <br>
 ♻️ Convenient merging-abilities for updating past scraping results. <br>
 
