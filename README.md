@@ -39,7 +39,7 @@ Easily fetch several data for the most common financial measures or even more un
 ```r
 df <- data.frame("symbol" = c("AAPL", "MSFT", "BABA"))
 
-# GICS Sectors, Profitability Rank, Probability of Financial Distress 
+# Profitability Rank, Probability of Financial Distress 
 df %>%
   get_profitability() %>%
   get_financial_distress()
