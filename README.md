@@ -41,14 +41,13 @@ df <- data.frame("symbol" = c("AAPL", "MSFT", "BABA"))
 
 # GICS Sectors, Profitability Rank, Probability of Financial Distress 
 df %>%
-  get_sectors() %>%
-  get_profitability %>%
-  get_financial_distress
+  get_profitability() %>%
+  get_financial_distress()
   
->   Symbol Sector             Subsector         Fin.Distress  Profitability  
-  1 AAPL   Technology         Hardware          0.02          10
-  2 BABA   Consumer Cyclical  Retail - Cyclical 0.29          9                                 
-  3 MSFT   Technology         Software          0.03          10
+>   Symbol Fin.Distress  Profitability  
+  1 AAPL   0.02          10
+  2 BABA   0.29          9                                 
+  3 MSFT   0.03          10
 ```
 ## Data Providers
 [gurufocus.com](gurufocus.com) <br>
